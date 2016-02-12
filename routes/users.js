@@ -1,10 +1,10 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Student = require('../models/Student.js');
+var Band = require('../models/Band.js');
 
 router.get('/', function(req, res, next) {
-	//Student.find(function(err,students){
+	//Band.find(function(err,students){
 		//if(err) return next(err);
 		//res.json(students);
 		var data = JSON.stringify();//students goes into the stringify VAR... but it gave erros. FUCK
@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/:id', function(req, res, next) {
-	//Student.findById(req.params.id, function(err,student){
+	//Band.findById(req.params.id, function(err,student){
 		//if(err) return next(err);
 		//res.json(student);
 		var data = JSON.stringify();//student goes into the stringify VAR... but it gave erros. FUCK

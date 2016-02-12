@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Student = require('../models/Bands.js');
+var Student = require('../models/Band.js');
 
 router.get('/', function(req, res, next) {
   res.render('index', { 

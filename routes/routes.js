@@ -3,30 +3,23 @@ var path = require('path');
 
 var router = express.Router();
 var mongoose = require('mongoose');
-var Band = require('../models/Student.js');
+var Band = require('../models/Band.js');
 
 router.get('/',function(req,res){
   res.sendFile(path.join(__dirname, '../public/views', 'index.html'));
 });
 
-router.get('/students', function(req,res,next){
-  Band.find(function(err,students){
+router.get('/bands', function(req,res,next){
+  Band.find(function(err,band){
     if(err)return next(err);
-    res.json(students);
+    res.json(band);
   });
 });
 
-router.get('/albums', function(req,res,next){
-  Band.find(function(err,albums){
+router.get('/details/:id', function(req,res,next){
+  Band.findById(req.params.id,function(err,band){
     if(err)return next(err);
-    res.json(albums);
-  });
-});
-
-router.get('/students/details', function(req,res,next){
-  Band.find(function(err,student){
-    if(err)return next(err);
-    res.json(student);
+    res.json(band);
   });
 });
 

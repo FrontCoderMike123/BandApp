@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/bands', function(err){//studentdb is the name of DB
+mongoose.connect('mongodb://localhost/bands', function(err){
   if(err){
     console.log('Connection Issues', err);
   }else{
