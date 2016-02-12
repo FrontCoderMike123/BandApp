@@ -1,0 +1,1324 @@
+{
+	"Artists":
+	[{
+		"Name":"Metallica",
+		"Photo":"images/artists/metallica.jpg",
+		"Bio":"James Hetfield (vocals, guitar; born August 3, 1963), Kirk Hammett (guitar; born November 18, 1962), Jason Newsted (bass; born March 4, 1963), Lars Ulrich (drums; born December 26, 1963), Cliff Burton (bass; born February 10, 1962, died September 27, 1986), Robert Trujillo (bass; born October 23, 1964).",
+		"Genre":"Heavy Metal",
+		"Albums":
+			[{
+				"Name":"Metallica",
+				"Photo":"images/albums/metallica.jpg",
+				"Year":"1991",
+				"Songs":
+				[{
+					"Title":"Enter Sandman",
+					"Length":"5:32"
+				},
+				{
+					"Title":"Sad But True",
+					"Length":"5:25"
+				},
+				{
+					"Title":"Holier Than Thou",
+					"Length":"3:48"
+				},
+				{
+					"Title":"The Unforgiven",
+					"Length":"6:27"
+				},
+				{
+					"Title":"Wherever I May Roam",
+					"Length":"6:44"
+				},
+				{
+					"Title":"Don't Thread on Me",
+					"Length":"3:41"
+				},
+				{
+					"Title":"Through the Never",
+					"Length":"4:04"
+				},
+				{
+					"Title":"Nothing Else Matters",
+					"Length":"6:29"
+				},
+				{
+					"Title":"Of Wolf and Man",
+					"Length":"4:17"
+				},
+				{
+					"Title":"The God That Failed",
+					"Length":"5:09"
+				},
+				{
+					"Title":"My Friend of Misery",
+					"Length":"6:50"
+				},
+				{
+					"Title":"The Struggle Within",
+					"Length":"3:22"
+				}]
+			},
+			{
+				"Name":"Ride the Lightning",
+				"Photo":"images/albums/lightning.jpg",
+				"Year":"1984",
+				"Songs":
+				[{
+					"Title":"Fight Fire With Fire",
+					"Length":"4:45"
+				},
+				{
+					"Title":"Ride the Lightning",
+					"Length":"6:38"
+				},
+				{
+					"Title":"For Whom The Bell Tolls",
+					"Length":"5:12"
+				},
+				{
+					"Title":"Fade to Black",
+					"Length":"6:55"
+				},
+				{
+					"Title":"Trapped Under Ice",
+					"Length":"4:05"
+				},
+				{
+					"Title":"Escape",
+					"Length":"4:24"
+				},
+				{
+					"Title":"Creeping Death",
+					"Length":"6:37"
+				},
+				{
+					"Title":"Call of Ktulu",
+					"Length":"8:55"
+				}]
+			},
+			{
+				"Name":"Kill em' All",
+				"Photo":"images/albums/kill.jpg",
+				"Year":"1983",
+				"Songs":
+				[{
+					"Title":"Hit the Lights",
+					"Length":"4:00"
+				},
+				{
+					"Title":"The Four Horsemen",
+					"Length":"7:13"
+				},
+				{
+					"Title":"Motorbreath",
+					"Length":"3:08"
+				},
+				{
+					"Title":"Jump in the Fire",
+					"Length":"4:41"
+				},
+				{
+					"Title":"Pulling Teeth",
+					"Length":"2:39"
+				},
+				{
+					"Title":"Whiplash",
+					"Length":"4:09"
+				},
+				{
+					"Title":"Phantom Lord",
+					"Length":"5:02"
+				},
+				{
+					"Title":"No Remorse",
+					"Length":"6:27"
+				},
+				{
+					"Title":"Seek & Destroy",
+					"Length":"6:56"
+				},
+				{
+					"Title":"Metal Militia",
+					"Length":"5:11"
+				}]
+			},
+			{
+				"Name":"Death Magnetic",
+				"Photo":"images/albums/death.jpg",
+				"Year":"2008",
+				"Songs":
+				[{
+					"Title":"That Was Just Your Life",
+					"Length":"7:08"
+				},
+				{
+					"Title":"The End of the Line",
+					"Length":"7:52"
+				},
+				{
+					"Title":"Broken, Beat & Scarred",
+					"Length":"6:25"
+				},
+				{
+					"Title":"The Day that Never Comes",
+					"Length":"7:56"
+				},
+				{
+					"Title":"All Nightmare Long",
+					"Length":"7:54"
+				},
+				{
+					"Title":"Cyanide",
+					"Length":"6:38"
+				},
+				{
+					"Title":"The Unforgiven III",
+					"Length":"7:32"
+				},
+				{
+					"Title":"The Judas Kiss",
+					"Length":"8:01"
+				},
+				{
+					"Title":"Suicide & Redemption",
+					"Length":"9:58"
+				},
+				{
+					"Title":"My Apocalypse",
+					"Length":"5:01"
+				}]
+			},
+			{
+				"Name":"And Justice for All",
+				"Photo":"images/albums/kill.jpg",
+				"Year":"1988",
+				"Songs":
+				[{
+					"Title":"Blackened",
+					"Length":"6:43"
+				},
+				{
+					"Title":"...and Justice for All",
+					"Length":"9:46"
+				},
+				{
+					"Title":"Eye of the Beholder",
+					"Length":"6:25"
+				},
+				{
+					"Title":"One",
+					"Length":"7:26"
+				},
+				{
+					"Title":"The Shortest Straw",
+					"Length":"6:09"
+				},
+				{
+					"Title":"Harvester of Sorrow",
+					"Length":"5:45"
+				},
+				{
+					"Title":"The Frayed Ends of Sanity",
+					"Length":"7:44"
+				},
+				{
+					"Title":"To Live Is to Die",
+					"Length":"9:48"
+				},
+				{
+					"Title":"Dyers Eve",
+					"Length":"5:14"
+				}]
+			}]
+	},
+	{
+		"Name":"Slayer",
+		"Photo":"images/artists/slayer.jpg",
+		"Bio":"Kerry Ray King is an American musician, best known as a guitarist for the American thrash metal band Slayer. He co-founded the band with Jeff Hanneman in 1981 and has been a member ever since.",
+		"Genre":"Death Metal",
+		"Albums":
+			[{
+				"Name":"Repentless",
+				"Photo":"images/albums/repentless.jpg",
+				"Year":"2015",
+				"Songs":
+				[{
+					"Title":"Delusions of Saviour",
+					"Length":"1:55"
+				},
+				{
+					"Title":"Repentless",
+					"Length":"3:20"
+				},
+				{
+					"Title":"Take Control",
+					"Length":"3:14"
+				},
+				{
+					"Title":"Vices",
+					"Length":"3:32"
+				},
+				{
+					"Title":"Cast the First Stone",
+					"Length":"3:43"
+				},
+				{
+					"Title":"When the Stillness Comes",
+					"Length":"4:21"
+				},
+				{
+					"Title":"Chasing Death",
+					"Length":"3:45"
+				},
+				{
+					"Title":"Implode",
+					"Length":"3:49"
+				},
+				{
+					"Title":"Piano Wire",
+					"Length":"2:48"
+				},
+				{
+					"Title":"Atrocity Vendor",
+					"Length":"2:55"
+				},
+				{
+					"Title":"You Against You",
+					"Length":"4:21"
+				},
+				{
+					"Title":"Pride in Prejudice",
+					"Length":"4:14"
+				}]
+			},
+			{
+				"Name":"Reign In Blood",
+				"Photo":"images/albums/blood.jpg",
+				"Year":"1986",
+				"Songs":
+				[{
+					"Title":"Angel of Death",
+					"Length":"4:52"
+				},
+				{
+					"Title":"Piece by Piece",
+					"Length":"2:03"
+				},
+				{
+					"Title":"Necrophobic",
+					"Length":"1:41"
+				},
+				{
+					"Title":"Altar of Sacrifice",
+					"Length":"2:48"
+				},
+				{
+					"Title":"Jesus Saves",
+					"Length":"2:54"
+				},
+				{
+					"Title":"Criminally Insane",
+					"Length":"2:23"
+				},
+				{
+					"Title":"Reborn",
+					"Length":"2:12"
+				},
+				{
+					"Title":"Epidemic",
+					"Length":"2:23"
+				},
+				{
+					"Title":"Postmortem",
+					"Length":"2:45"
+				},
+				{
+					"Title":"Raining Blood",
+					"Length":"4:58"
+				}]
+			},
+			{
+				"Name":"South of Heaven",
+				"Photo":"images/albums/heaven.jpg",
+				"Year":"1988",
+				"Songs":
+				[{
+					"Title":"South of Heaven",
+					"Length":"4:58"
+				},
+				{
+					"Title":"Silent Scream",
+					"Length":"3:07"
+				},
+				{
+					"Title":"Live Undead",
+					"Length":"3:50"
+				},
+				{
+					"Title":"Behind the Crooked Cross",
+					"Length":"3:15"
+				},
+				{
+					"Title":"Mandatory Suicide",
+					"Length":"4:05"
+				},
+				{
+					"Title":"Ghosts of War",
+					"Length":"3:53"
+				},
+				{
+					"Title":"Read Between the Lies",
+					"Length":"3:20"
+				},
+				{
+					"Title":"Cleanse the Soul",
+					"Length":"3:02"
+				},
+				{
+					"Title":"Dissident Aggressor",
+					"Length":"2:35"
+				},
+				{
+					"Title":"Spill the Blood",
+					"Length":"4:49"
+				}]
+			},
+			{
+				"Name":"Seasons of the Abyss",
+				"Photo":"images/albums/abyss.jpg",
+				"Year":"1990",
+				"Songs":
+				[{
+					"Title":"War Ensemble",
+					"Length":"4:52"
+				},
+				{
+					"Title":"Blood Red",
+					"Length":"2:48"
+				},
+				{
+					"Title":"Spirit Black",
+					"Length":"4:07"
+				},
+				{
+					"Title":"Expendable Youth",
+					"Length":"4:10"
+				},
+				{
+					"Title":"Dead Skin Mask",
+					"Length":"4:58"
+				},
+				{
+					"Title":"Hallowed Point",
+					"Length":"3:24"
+				},
+				{
+					"Title":"Skeletons of Society",
+					"Length":"4:41"
+				},
+				{
+					"Title":"Templation",
+					"Length":"3:26"
+				},
+				{
+					"Title":"Born of Fire",
+					"Length":"3:00"
+				},
+				{
+					"Title":"Seasons in the Abyss",
+					"Length":"6:35"
+				}]
+			},
+			{
+				"Name":"God Hates Us All",
+				"Photo":"images/albums/hate.jpg",
+				"Year":"2001",
+				"Songs":
+				[{
+					"Title":"Darkness of Christ",
+					"Length":"1:30"
+				},
+				{
+					"Title":"Disciple",
+					"Length":"3:36"
+				},
+				{
+					"Title":"God Send Death",
+					"Length":"3:46"
+				},
+				{
+					"Title":"New Faith",
+					"Length":"3:06"
+				},
+				{
+					"Title":"Cast Down",
+					"Length":"3:27"
+				},
+				{
+					"Title":"Threshold",
+					"Length":"2:29"
+				},
+				{
+					"Title":"Exile",
+					"Length":"3:55"
+				},
+				{
+					"Title":"Seven Faces",
+					"Length":"3:42"
+				},
+				{
+					"Title":"Bloodline",
+					"Length":"3:24"
+				},
+				{
+					"Title":"Deviance",
+					"Length":"3:09"
+				},
+				{
+					"Title":"War Zone",
+					"Length":"2:45"
+				},
+				{
+					"Title":"Here Comes the Pain",
+					"Length":"4:32"
+				},
+				{
+					"Title":"Payback",
+					"Length":"3:03"
+				}]
+			}]
+	},
+	{
+		"Name":"Judas Priest",
+		"Photo":"images/artists/judas.jpg",
+		"Bio":"Judas Priest, a leather-clad heavy-metal band, was formed by guitarist K.K. Downing and bassist Ian Hill. In 1971 frontman Rob Halford joined (he'd previously worked in theatrical lighting), having met Hill, whom his sister was then dating (and later married). The band didn't get a contract until 1974, just after guitarist Glenn Tipton joined. Its first LP was released that year, but both it and the 1976 follow-up, Sad Wings of Destiny, sold marginally.",
+		"Genre":"Heavy Metal",
+		"Albums":
+			[{
+				"Name":"Pain Killer",
+				"Photo":"images/albums/killer.jpg",
+				"Year":"1990",
+				"Songs":
+				[{
+					"Title":"Pain Killer",
+					"Length":"6:06"
+				},
+				{
+					"Title":"Hell Patrol",
+					"Length":"3:37"
+				},
+				{
+					"Title":"All Guns Blazing",
+					"Length":"3:57"
+				},
+				{
+					"Title":"Leather Rebel",
+					"Length":"3:35"
+				},
+				{
+					"Title":"Metal Meltdown",
+					"Length":"4:50"
+				},
+				{
+					"Title":"Night Crawler",
+					"Length":"5:45"
+				},
+				{
+					"Title":"Between the Hammer & The Anvil",
+					"Length":"4:49"
+				},
+				{
+					"Title":"A Touch of Evil",
+					"Length":"5:44"
+				},
+				{
+					"Title":"Battle Hymn",
+					"Length":"0:56"
+				},
+				{
+					"Title":"One Shot at Glory",
+					"Length":"6:48"
+				}]
+			},
+			{
+				"Name":"British Steel",
+				"Photo":"images/albums/steel.jpg",
+				"Year":"1980",
+				"Songs":
+				[{
+					"Title":"Breakin' the Law",
+					"Length":"2:35"
+				},
+				{
+					"Title":"Rapid Fire",
+					"Length":"2:37"
+				},
+				{
+					"Title":"Metal Gods",
+					"Length":"4:00"
+				},
+				{
+					"Title":"Grinder",
+					"Length":"3:56"
+				},
+				{
+					"Title":"United",
+					"Length":"3:31"
+				},
+				{
+					"Title":"Living After Midnight",
+					"Length":"3:36"
+				},
+				{
+					"Title":"You Don't Have to Be Old to Be Wise",
+					"Length":"5:04"
+				},
+				{
+					"Title":"You Don't Have to Be Old",
+					"Length":"3:33"
+				},
+				{
+					"Title":"The Rage",
+					"Length":"4:44"
+				},
+				{
+					"Title":"To Be Wise",
+					"Length":"5:06"
+				},
+				{
+					"Title":"Steeler",
+					"Length":"4:30"
+				}]
+			},
+			{
+				"Name":"Redeemer of Souls",
+				"Photo":"images/albums/souls.jpg",
+				"Year":"2014",
+				"Songs":
+				[{
+					"Title":"Dragonaut",
+					"Length":"4:26"
+				},
+				{
+					"Title":"Redeemer of Souls",
+					"Length":"3:59"
+				},
+				{
+					"Title":"Halls of Valhalla",
+					"Length":"6:04"
+				},
+				{
+					"Title":"Sword of Damocles",
+					"Length":"4:54"
+				},
+				{
+					"Title":"March of the Damned",
+					"Length":"3:56"
+				},
+				{
+					"Title":"Down in Flames",
+					"Length":"3:55"
+				},
+				{
+					"Title":"Hell & Back",
+					"Length":"4:46"
+				},
+				{
+					"Title":"Cold Blooded",
+					"Length":"5:25"
+				},
+				{
+					"Title":"Metalizer",
+					"Length":"4:37"
+				},
+				{
+					"Title":"Crossfire",
+					"Length":"3:51"
+				},
+				{
+					"Title":"Secrets of the Dead",
+					"Length":"5:41"
+				},
+				{
+					"Title":"Battle Cry",
+					"Length":"5:18"
+				},
+				{
+					"Title":"Beginning of the End",
+					"Length":"5:07"
+				},
+				{
+					"Title":"Snakebite",
+					"Length":"3:14"
+				},
+				{
+					"Title":"Tears of Blood",
+					"Length":"4:19"
+				},
+				{
+					"Title":"Creatures",
+					"Length":"4:25"
+				},
+				{
+					"Title":"Bring It On",
+					"Length":"3:18"
+				},
+				{
+					"Title":"Never Forget",
+					"Length":"6:25"
+				}]
+			},
+			{
+				"Name":"Defenders of the Faith",
+				"Photo":"images/albums/faith.jpg",
+				"Year":"1984",
+				"Songs":
+				[{
+					"Title":"Freewheel Burning",
+					"Length":"4:24"
+				},
+				{
+					"Title":"Jawbreaker",
+					"Length":"3:27"
+				},
+				{
+					"Title":"Rock Hard, Live Free",
+					"Length":"5:35"
+				},
+				{
+					"Title":"The Sentinel",
+					"Length":"5:04"
+				},
+				{
+					"Title":"Love Bites",
+					"Length":"4:48"
+				},
+				{
+					"Title":"Eat Me Alive",
+					"Length":"3:36"
+				},
+				{
+					"Title":"Some Heads Are Gonna Roll",
+					"Length":"4:06"
+				},
+				{
+					"Title":"Night Comes Down",
+					"Length":"4:00"
+				},
+				{
+					"Title":"Heavy Duty",
+					"Length":"2:26"
+				},
+				{
+					"Title":"Defenders of the Faith",
+					"Length":"1:29"
+				}]
+			},
+			{
+				"Name":"Sad Wings of Destiny",
+				"Photo":"images/albums/wings.jpg",
+				"Year":"1976",
+				"Songs":
+				[{
+					"Title":"Prelude",
+					"Length":"2:02"
+				},
+				{
+					"Title":"Tyrant",
+					"Length":"4:27"
+				},
+				{
+					"Title":"Genocide",
+					"Length":"5:49"
+				},
+				{
+					"Title":"Epitaph",
+					"Length":"3:08"
+				},
+				{
+					"Title":"Island of Domination",
+					"Length":"4:32"
+				},
+				{
+					"Title":"Victim of Changes",
+					"Length":"7:13"
+				},
+				{
+					"Title":"The Ripper",
+					"Length":"2:42"
+				},
+				{
+					"Title":"Dreamer Deceiver",
+					"Length":"5:51"
+				},
+				{
+					"Title":"Deceiver",
+					"Length":"2:42"
+				}]
+			}]
+	},
+	{
+		"Name":"Lamb of God",
+		"Photo":"images/artists/lamb.jpg",
+		"Bio":"The roots of Lamb of God were planted in 1990 when Mark Morton, Chris Adler and John Campbell were floor mates at Virginia Commonwealth University. The trio began playing at Adler's house in Richmond weathering chilly conditions. 'There was no heat at the house,' 'recalls Campbell. 'We would freeze our asses off, get really drunk and hang around the kerosene heaters trying to write metal songs. Kerosene fumes and Black Label beer were definitely what fueled our early days.'",
+		"Genre":"Metal",
+		"Albums":
+			[{
+				"Name":"Ashes of the Wake",
+				"Photo":"images/albums/ashes.jpg",
+				"Year":"2004",
+				"Songs":
+				[{
+					"Title":"Laid to Rest",
+					"Length":"3:50"
+				},
+				{
+					"Title":"Hourglass",
+					"Length":"3:57"
+				},
+				{
+					"Title":"Now You've Got Something to Die For",
+					"Length":"3:39"
+				},
+				{
+					"Title":"The Faded Line",
+					"Length":"4:37"
+				},
+				{
+					"Title":"Omerta",
+					"Length":"4:46"
+				},
+				{
+					"Title":"Blood of the Scibe",
+					"Length":"4:24"
+				},
+				{
+					"Title":"One Gun",
+					"Length":"3:59"
+				},
+				{
+					"Title":"Break You",
+					"Length":"3:36"
+				},
+				{
+					"Title":"What I've Become",
+					"Length":"3:29"
+				},
+				{
+					"Title":"Ashes of the Wake",
+					"Length":"5:45"
+				},
+				{
+					"Title":"Remorse Is for the Dead",
+					"Length":"5:40"
+				}]
+			},
+			{
+				"Name":"Wrath",
+				"Photo":"images/albums/wrath.jpg",
+				"Year":"2009",
+				"Songs":
+				[{
+					"Title":"The Passing",
+					"Length":"1:58"
+				},
+				{
+					"Title":"In Your Words",
+					"Length":"5:20"
+				},
+				{
+					"Title":"Set to Fail",
+					"Length":"3:47"
+				},
+				{
+					"Title":"Contractor",
+					"Length":"3:22"
+				},
+				{
+					"Title":"Fake Messiah",
+					"Length":"4:33"
+				},
+				{
+					"Title":"Grace",
+					"Length":"3:54"
+				},
+				{
+					"Title":"Broken Hands",
+					"Length":"3:53"
+				},
+				{
+					"Title":"Dead Seeds",
+					"Length":"3:41"
+				},
+				{
+					"Title":"Everything to Nothing",
+					"Length":"3:50"
+				},
+				{
+					"Title":"Choke Sermon",
+					"Length":"3:20"
+				},
+				{
+					"Title":"Reclamation",
+					"Length":"7:05"
+				},
+				{
+					"Title":"We Die Alone",
+					"Length":"4:39"
+				},
+				{
+					"Title":"Shoulder of Your God",
+					"Length":"5:55"
+				},
+				{
+					"Title":"Condemn the Hive",
+					"Length":"3:41"
+				}]
+			},
+			{
+				"Name":"Sacrament",
+				"Photo":"images/albums/sacrament.jpg",
+				"Year":"2006",
+				"Songs":
+				[{
+					"Title":"Walk with Me In Hell",
+					"Length":"5:12"
+				},
+				{
+					"Title":"Again We Rise",
+					"Length":"4:30"
+				},
+				{
+					"Title":"Redneck",
+					"Length":"3:41"
+				},
+				{
+					"Title":"Pathetic",
+					"Length":"4:31"
+				},
+				{
+					"Title":"Foot to the Throat",
+					"Length":"3:14"
+				},
+				{
+					"Title":"Descending",
+					"Length":"3:35"
+				},
+				{
+					"Title":"Blacken The Cursed Sun",
+					"Length":"5:28"
+				},
+				{
+					"Title":"Forgotten",
+					"Length":"3:06"
+				},
+				{
+					"Title":"Requiem",
+					"Length":"4:11"
+				},
+				{
+					"Title":"More Time to Kill",
+					"Length":"3:37"
+				},
+				{
+					"Title":"Beating On Deaths Door",
+					"Length":"5:07"
+				}]
+			},
+			{
+				"Name":"Resolution",
+				"Photo":"images/albums/resolution.jpg",
+				"Year":"2012",
+				"Songs":
+				[{
+					"Title":"Straight for the Sun",
+					"Length":"2:27"
+				},
+				{
+					"Title":"Desolation",
+					"Length":"3:54"
+				},
+				{
+					"Title":"Ghost Walking",
+					"Length":"4:31"
+				},
+				{
+					"Title":"Guilty",
+					"Length":"3:24"
+				},
+				{
+					"Title":"The Undertow",
+					"Length":"4:47"
+				},
+				{
+					"Title":"The Number 6",
+					"Length":"5:22"
+				},
+				{
+					"Title":"Barbarossa",
+					"Length":"1:36"
+				},
+				{
+					"Title":"Invictus",
+					"Length":"4:13"
+				},
+				{
+					"Title":"Cheated",
+					"Length":"2:36"
+				},
+				{
+					"Title":"Insurrection",
+					"Length":"4:51"
+				},
+				{
+					"Title":"Terminally Unique",
+					"Length":"4:21"
+				},
+				{
+					"Title":"To the End",
+					"Length":"3:49"
+				},
+				{
+					"Title":"Visitation",
+					"Length":"3:59"
+				},
+				{
+					"Title":"King Me",
+					"Length":"6:37"
+				}]
+			},
+			{
+				"Name":"As the Palaces Burn",
+				"Photo":"images/albums/burn.jpg",
+				"Year":"2003",
+				"Songs":
+				[{
+					"Title":"Ruin",
+					"Length":"3:55"
+				},
+				{
+					"Title":"As the Palaces Burn",
+					"Length":"2:25"
+				},
+				{
+					"Title":"Purified",
+					"Length":"3:09"
+				},
+				{
+					"Title":"11th Hour",
+					"Length":"3:45"
+				},
+				{
+					"Title":"For Your Malice",
+					"Length":"3:43"
+				},
+				{
+					"Title":"Boot Scraper",
+					"Length":"4:34"
+				},
+				{
+					"Title":"A Devil in God's Country",
+					"Length":"3:13"
+				},
+				{
+					"Title":"In Defense of Our Good Name",
+					"Length":"4:10"
+				},
+				{
+					"Title":"Blood Junkie",
+					"Length":"4:22"
+				},
+				{
+					"Title":"Vigil",
+					"Length":"4:43"
+				}]
+			}]
+	},
+	{
+		"Name":"Led Zeppelin",
+		"Photo":"images/artists/led.jpg",
+		"Bio":"John Baldwin, better known by his stage name John Paul Jones, is an English multi-instrumentalist, songwriter, composer, arranger and record producer.",
+		"Genre":"Metal",
+		"Albums":
+			[{
+				"Name":"Physical Graffiti",
+				"Photo":"images/albums/graf.jpg",
+				"Year":"1975",
+				"Songs":
+				[{
+					"Title":"Custard Pie",
+					"Length":"4:14"
+				},
+				{
+					"Title":"The Rover",
+					"Length":"5:37"
+				},
+				{
+					"Title":"In My Time of Dying",
+					"Length":"10:52"
+				},
+				{
+					"Title":"Houses of the Holy",
+					"Length":"4:03"
+				},
+				{
+					"Title":"Trampled Under Foot",
+					"Length":"5:36"
+				},
+				{
+					"Title":"Kashmir",
+					"Length":"8:29"
+				},
+				{
+					"Title":"In the Light",
+					"Length":"8:47"
+				},
+				{
+					"Title":"Bron-Yr-Aur",
+					"Length":"2:06"
+				},
+				{
+					"Title":"Down by the Seaside",
+					"Length":"5:16"
+				},
+				{
+					"Title":"Ten Years Gone",
+					"Length":"6:33"
+				},
+				{
+					"Title":"Night Flight",
+					"Length":"3:38"
+				},
+				{
+					"Title":"The Wanton Song",
+					"Length":"4:10"
+				},
+				{
+					"Title":"Boogie With Stu",
+					"Length":"3:53"
+				},
+				{
+					"Title":"Black Country Woman",
+					"Length":"4:33"
+				},
+				{
+					"Title":"Sick Again",
+					"Length":"4:43"
+				}]
+			},
+			{
+				"Name":"Led Zeppelin IV",
+				"Photo":"images/albums/led.jpg",
+				"Year":"1971",
+				"Songs":
+				[{
+					"Title":"Black Dog",
+					"Length":"4:56"
+				},
+				{
+					"Title":"Rock And Roll",
+					"Length":"3:41"
+				},
+				{
+					"Title":"The Battle of Evermore",
+					"Length":"5:52"
+				},
+				{
+					"Title":"Stairway to Heaven",
+					"Length":"7:59"
+				},
+				{
+					"Title":"Misty Mountain Top",
+					"Length":"4:39"
+				},
+				{
+					"Title":"Four Sticks",
+					"Length":"4:45"
+				},
+				{
+					"Title":"Going to California",
+					"Length":"3:32"
+				},
+				{
+					"Title":"When the Levee Breaks",
+					"Length":"7:08"
+				}]
+			},
+			{
+				"Name":"Houses of the Holy",
+				"Photo":"images/albums/holy.jpg",
+				"Year":"1973",
+				"Songs":
+				[{
+					"Title":"The Song Remains the Same",
+					"Length":"5:30"
+				},
+				{
+					"Title":"The Rain Song",
+					"Length":"7:39"
+				},
+				{
+					"Title":"Over the Hills and Far Away",
+					"Length":"4:49"
+				},
+				{
+					"Title":"The Crunge",
+					"Length":"3:17"
+				},
+				{
+					"Title":"Dancing Days",
+					"Length":"3:42"
+				},
+				{
+					"Title":"D'Yer Mak'Er",
+					"Length":"4:23"
+				},
+				{
+					"Title":"No Quarter",
+					"Length":"7:01"
+				},
+				{
+					"Title":"The Ocean",
+					"Length":"4:33"
+				}]
+			},
+			{
+				"Name":"Presence",
+				"Photo":"images/albums/presence.jpg",
+				"Year":"1976",
+				"Songs":
+				[{
+					"Title":"Achilles Last Stand",
+					"Length":"10:23"
+				},
+				{
+					"Title":"For Your Life",
+					"Length":"6:24"
+				},
+				{
+					"Title":"Royal Orleans",
+					"Length":"2:59"
+				},
+				{
+					"Title":"Nobody's Fault But Mine",
+					"Length":"6:16"
+				},
+				{
+					"Title":"Candy Store Rock",
+					"Length":"4:11"
+				},
+				{
+					"Title":"Hots On for Nowhere",
+					"Length":"4:42"
+				},
+				{
+					"Title":"Tea for One",
+					"Length":"9:23"
+				}]
+			},
+			{
+				"Name":"Mothership",
+				"Photo":"images/albums/ship.jpg",
+				"Year":"2007",
+				"Songs":
+				[{
+					"Title":"Good Times Bad Times",
+					"Length":"2:43"
+				},
+				{
+					"Title":"Communication Breakdown",
+					"Length":"2:29"
+				},
+				{
+					"Title":"Dazed and Confused",
+					"Length":"6:28"
+				},
+				{
+					"Title":"Babe I'm Gonna Leave You",
+					"Length":"6:42"
+				},
+				{
+					"Title":"Whola Lotta Love",
+					"Length":"5:34"
+				},
+				{
+					"Title":"Ramble On",
+					"Length":"4:24"
+				},
+				{
+					"Title":"Heartbreak",
+					"Length":"4:14"
+				},
+				{
+					"Title":"Immigrant Song",
+					"Length":"2:25"
+				},
+				{
+					"Title":"Since I've Been Loving You",
+					"Length":"7:24"
+				},
+				{
+					"Title":"Rock and Roll",
+					"Length":"3:41"
+				},
+				{
+					"Title":"Black Dog",
+					"Length":"4:56"
+				},
+				{
+					"Title":"When the Levee Breaks",
+					"Length":"7:08"
+				},
+				{
+					"Title":"Stairway to Heaven",
+					"Length":"7:59"
+				},
+				{
+					"Title":"The Songs Ramins the Same",
+					"Length":"5:30"
+				},
+				{
+					"Title":"Over the Hills and Far Away",
+					"Length":"4:49"
+				},
+				{
+					"Title":"D'Yer Mak'Er",
+					"Length":"4:23"
+				},
+				{
+					"Title":"No Quarter",
+					"Length":"7:01"
+				},
+				{
+					"Title":"Trampled Under Foot",
+					"Length":"5:36"
+				},
+				{
+					"Title":"Houses of the Holy",
+					"Length":"4:03"
+				},
+				{
+					"Title":"Kashmir",
+					"Length":"8:29"
+				},
+				{
+					"Title":"Nobody's Fault But Mine",
+					"Length":"6:16"
+				},
+				{
+					"Title":"Achilles Last Stand",
+					"Length":"10:23"
+				},
+				{
+					"Title":"In the Evening",
+					"Length":"6:51"
+				},
+				{
+					"Title":"All My Love",
+					"Length":"5:53"
+				}]
+			}]
+	}]
+}

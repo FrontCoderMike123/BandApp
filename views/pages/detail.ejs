@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+    <header>
+      <% include ../partials/header %>
+    </header>
+
+<section id="intro">
+  <% var student = JSON.parse(details); %><!--info is the DATA var in the user.js-->
+    <h1><%= title %></h1>
+
+    <div id="studentInfo">
+      <%= student.fname %>
+      <img src="<%= student.img %>"><!--this would have to be set up. but this is how its done-->
+    </div>
+
+    <div>
+      <p><%= comment %></p>
+    </div>
+</section>
+
+    <footer>
+      <% include ../partials/footer %>
+    </footer>
+
+  </body>
+</html>

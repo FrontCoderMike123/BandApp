@@ -1,0 +1,9 @@
+<ul>
+	<li data-ng-repeat="band in bands">
+		<img data-ng-src="{{band.Photo}}">
+		<p>Band Name: {{band.Name}}</p>
+		<p>Genre: {{band.Genre}}</p>
+		<p>Bio: {{band.Bio}}</p>
+		<a href="#/details/{{band._id}}">Want to know more?</a>
+	</li>
+</ul>
