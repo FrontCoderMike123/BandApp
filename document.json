@@ -1320,5 +1320,295 @@
 					"Length":"5:53"
 				}]
 			}]
+	},
+	{
+		"Name":"Iron Maiden",
+		"Photo":"images/artists/iron.jpg",
+		"Bio":"Taking its name from the medieval torture device, Iron Maiden was part of England's late-Seventies crop of heavy-metal bands that boasted simple guitar riffs, bone-crunching chords and shrieking vocals.",
+		"Genre":"Metal",
+		"Albums": 
+		[{
+			"Name":"Killers",
+			"Photo":"images/albums/killers.jpg",
+			"Year":"1981",
+			"Songs":
+			[{
+				"Title":"The Ides of March",
+				"Length":"1:45"
+			},
+			{
+				"Title":"Wrathchild",
+				"Length":"2:54"
+			},
+			{
+				"Title":"Murders in the Rue Morgue",
+				"Length":"4:14"
+			},
+			{
+				"Title":"Another Life",
+				"Length":"3:22"
+			},
+			{
+				"Title":"Genghis Khan",
+				"Length":"3:02"
+			},
+			{
+				"Title":"Innocent Exile",
+				"Length":"3:50"
+			},
+			{
+				"Title":"Killers",
+				"Length":"4:57"
+			},
+			{
+				"Title":"Twilight Zone",
+				"Length":"2:34"
+			},
+			{
+				"Title":"Prodigal Son",
+				"Length":"6:05"
+			},
+			{
+				"Title":"Purgatory",
+				"Length":"3:19"
+			},
+			{
+				"Title":"Drifter",
+				"Length":"4:47"
+			}]
+		},
+		{
+			"Name":"Fear of the Dark",
+			"Photo":"images/albums/fearDark.jpg",
+			"Year":"1992",
+			"Songs":
+			[{
+				"Title":"Be Quick or Be Dead",
+				"Length":"3:24"
+			},
+			{
+				"Title":"From Here to Eternity",
+				"Length":"3:38"
+			},
+			{
+				"Title":"Afraid to Shoot Strangers",
+				"Length":"6:52"
+			},
+			{
+				"Title":"Fear Is the Key",
+				"Length":"5:35"
+			},
+			{
+				"Title":"Childhood's End",
+				"Length":"4:41"
+			},
+			{
+				"Title":"Wasting Love",
+				"Length":"5:48"
+			},
+			{
+				"Title":"The Fugitive",
+				"Length":"4:54"
+			},
+			{
+				"Title":"Chains of Misery",
+				"Length":"3:37"
+			},
+			{
+				"Title":"The Apparition",
+				"Length":"3:55"
+			},
+			{
+				"Title":"Judas By My Guide",
+				"Length":"3:09"
+			},
+			{
+				"Title":"Weekend Warrior",
+				"Length":"5:40"
+			},
+			{
+				"Title":"Fear of the Dark",
+				"Length":"7:08"
+			}]
+		},
+		{
+			"Name":"Number of the Beast",
+			"Photo":"images/albums/beast.jpg",
+			"Year":"1982",
+			"Songs":
+			[{
+				"Title":"Invaders",
+				"Length":"3:24"
+			},
+			{
+				"Title":"Children Of The Damned",
+				"Length":"4:35"
+			},
+			{
+				"Title":"The Prisoner",
+				"Length":"6:02"
+			},
+			{
+				"Title":"22 Acacia Avenue",
+				"Length":"6:36"
+			},
+			{
+				"Title":"The Number of the Beast",
+				"Length":"4:58"
+			},
+			{
+				"Title":"Run to the Hills",
+				"Length":"3:49"
+			},
+			{
+				"Title":"Gangland",
+				"Length":"3:49"
+			},
+			{
+				"Title":"Hallowed Be Thy Name",
+				"Length":"7:11"
+			}]
+		},
+		{
+			"Name":"Powerslave",
+			"Photo":"images/albums/powerSlave.jpg",
+			"Year":"1984",
+			"Songs":
+			[{
+				"Title":"Aces High",
+				"Length":"4:32"
+			},
+			{
+				"Title":"2 Minutes to Midnight",
+				"Length":"6:02"
+			},
+			{
+				"Title":"Losfer Words",
+				"Length":"4:17"
+			},
+			{
+				"Title":"Flash of the Blade",
+				"Length":"4:08"
+			},
+			{
+				"Title":"The Duellists",
+				"Length":"6:10"
+			},
+			{
+				"Title":"Back in the Village",
+				"Length":"5:05"
+			},
+			{
+				"Title":"Powerslave",
+				"Length":"7:13"
+			},
+			{
+				"Title":"Rime of the Ancient Mariner",
+				"Length":"10:35"
+			}]
+		},
+		{
+			"Name":"Piece of Mind",
+			"Photo":"images/albums/pieceMind.jpg",
+			"Year":"1983",
+			"Songs":
+			[{
+				"Title":"The Trooper",
+				"Length":"3:59"
+			},
+			{
+				"Title":"Still Life",
+				"Length":"4:32"
+			},
+			{
+				"Title":"Quest for Fire",
+				"Length":"3:41"
+			},
+			{
+				"Title":"Sun and Steel",
+				"Length":"3:27"
+			},
+			{
+				"Title":"To Tame a Land",
+				"Length":"7:27"
+			},
+			{
+				"Title":"Where Eagles Dare",
+				"Length":"6:10"
+			},
+			{
+				"Title":"Revelations",
+				"Length":"6:29"
+			},
+			{
+				"Title":"Flight of Icarus",
+				"Length":"3:28"
+			},
+			{
+				"Title":"Die With Your Boots On",
+				"Length":"5:12"
+			},
+			{
+				"Title":"Cross Eyed Mary",
+				"Length":"3:50"
+			}]
+		}]
+	},
+	{
+		"Name":"Black Sabath",
+		"Photo":"images/artists/sabath.jpg",
+		"Bio":"",
+		"Genre":"Heavy Metal",
+		"Albums": 
+		[{
+			"Name":"",
+			"Photo":"images/albums/.jpg",
+			"Year":"1981",
+			"Songs":
+			[{
+				"Title":"",
+				"Length":""
+			}]
+		},
+		{
+			"Name":"",
+			"Photo":"images/albums/.jpg",
+			"Year":"",
+			"Songs":
+			[{
+				"Title":"",
+				"Length":""
+			}]
+		},
+		{
+			"Name":"",
+			"Photo":"images/albums/.jpg",
+			"Year":"",
+			"Songs":
+			[{
+				"Title":"",
+				"Length":""
+			}]
+		},
+		{
+			"Name":"",
+			"Photo":"images/albums/.jpg",
+			"Year":"",
+			"Songs":
+			[{
+				"Title":"",
+				"Length":""
+			}]
+		},
+		{
+			"Name":"",
+			"Photo":"images/albums/.jpg",
+			"Year":"",
+			"Songs":
+			[{
+				"Title":"",
+				"Length":""
+			}]
+		}]
 	}]
 }
