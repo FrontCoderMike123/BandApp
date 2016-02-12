@@ -16,6 +16,15 @@ router.get('/bands', function(req,res,next){
   });
 });
 
+/*router.get('/details/:id', function(req,res,next){
+  db.bands('bands',function(err,band){
+    bands.findOne({ _id: bands.db.bson_serializer.ObjectID.createFromHexString(req.params.id)},
+      function(err,band){
+        res.json(band);
+      });
+  });
+});*/
+
 router.get('/details/:id', function(req,res,next){
   Band.findById(req.params.id,function(err,band){
     if(err)return next(err);
