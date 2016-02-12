@@ -18,6 +18,9 @@ bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
 	$http.get('/students').then(function(bands){
 		$scope.bands = bands.data;
 	});
+	$http.get('/albums').then(function(albums){
+		$scope.bands = albums.data.Albums;
+	});
 }]);
 
 bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams', function($scope,$http,$stateParams) {

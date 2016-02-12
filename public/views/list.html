@@ -1,9 +1,11 @@
-<ul>
+<div id="bandWrapper">
+<ul class="img-list">
 	<li data-ng-repeat="band in bands">
-		<img data-ng-src="{{band.Photo}}">
-		<p>Band Name: {{band.Name}}</p>
-		<p>Genre: {{band.Genre}}</p>
-		<p>Bio: {{band.Bio}}</p>
-		<a href="#/details/{{band._id}}">Want to know more?</a>
+		<a class="detailsLink" href="#/details/{{band._id}}">
+			<img data-ng-src="{{band.Photo}}">
+			<span class="text-content"><span>{{band.Name}}</span></span>
+		</a>
+		<!--<img data-ng-src="{{band.Albums[1].Photo}}">-->
 	</li>
 </ul>
+</div>
