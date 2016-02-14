@@ -1,13 +1,13 @@
-var bandApp = angular.module('bandApp', ['ui.router']);
+var bandApp = angular.module('bandApp', ['ui.router','ngAnimate']);
 
 bandApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
 	$stateProvider.state('bands',{
 		url: '/bands',
-		templateUrl: 'views/list.html', //we are still in the public folder!
+		templateUrl: 'views/list.html',
 		controller: 'mainCtrl'
 	});
 	$stateProvider.state('details', {
-  		url: '/details/:id',
+  		url: '/details/{id}',
   		templateUrl: 'views/details.html',
   		controller: 'detailsCtrl'
 	});
@@ -22,7 +22,8 @@ bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
 
 bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams', function($scope,$http,$stateParams) {
   var ID = $stateParams.id;
-  $http.get('/details/'+ID).success(function(bands) {
-    $scope.Name = bands[$stateParams.id].Name;
+  $http.get('/details/'+ID).then(function(bands) {
+    $scope.Name = bands.data[$stateParams.id].Name;
+    //console.log(ID); Properly spits out the RIGHT ID!!
   });
 }]);

@@ -1555,59 +1555,1214 @@
 		}]
 	},
 	{
-		"Name":"Black Sabath",
-		"Photo":"images/artists/sabath.jpg",
-		"Bio":"",
+		"Name":"Avenged Sevenfold",
+		"Photo":"images/artists/avenged.jpg",
+		"Bio":"The cartoonish metalcore band Avenged Sevenfold, also known as A7X, mix screamed vocals and a hardcore punk-inspired metal guitar attack with pop hooks, creating a musical cocktail as contradictory as the band's political outlook. Claiming to be conservative patriots, the band advocates the traditional heavy-metal lifestyle of strippers, substance abuse and horror-show lyrics.",
 		"Genre":"Heavy Metal",
 		"Albums": 
 		[{
-			"Name":"",
-			"Photo":"images/albums/.jpg",
-			"Year":"1981",
+			"Name":"Sounding the Seventh Trumpet",
+			"Photo":"images/albums/trumpet.jpg",
+			"Year":"2001",
 			"Songs":
 			[{
-				"Title":"",
-				"Length":""
+				"Title":"To End the Rapture",
+				"Length":"1:22"
+			},
+			{
+				"Title":"Turn the Other Way",
+				"Length":"5:37"
+			},
+			{
+				"Title":"Darkness Surrounding",
+				"Length":"4:50"
+			},
+			{
+				"Title":"The Art of Subconscious Illusion",
+				"Length":"3:46"
+			},
+			{
+				"Title":"We Come Out at Night",
+				"Length":"4:45"
+			},
+			{
+				"Title":"Lips of Deceit",
+				"Length":"4:09"
+			},
+			{
+				"Title":"Warmness on the Soul",
+				"Length":"4:20"
+			},
+			{
+				"Title":"An Epic of Time Wasted",
+				"Length":"4:19"
+			},
+			{
+				"Title":"Breaking Their Hold",
+				"Length":"1:12"
+			},
+			{
+				"Title":"Forgotten Faces",
+				"Length":"3:27"
+			},
+			{
+				"Title":"Thick and Thin",
+				"Length":"4:15"
+			},
+			{
+				"Title":"Streets",
+				"Length":"3:06"
+			},
+			{
+				"Title":"Shattered by Broken Dreams",
+				"Length":"7:08"
 			}]
 		},
 		{
-			"Name":"",
-			"Photo":"images/albums/.jpg",
-			"Year":"",
+			"Name":"Waking the Fallen",
+			"Photo":"images/albums/waking.jpg",
+			"Year":"2003",
 			"Songs":
 			[{
-				"Title":"",
-				"Length":""
+				"Title":"Waking The Fallen",
+				"Length":"1:42"
+			},
+			{
+				"Title":"Unholy Confessions",
+				"Length":"4:44"
+			},
+			{
+				"Title":"Chapter Four",
+				"Length":"5:43"
+			},
+			{
+				"Title":"Remenissions",
+				"Length":"6:07"
+			},
+			{
+				"Title":"Desecrate Through Reverence",
+				"Length":"5:38"
+			},
+			{
+				"Title":"Eternal Rest",
+				"Length":"5:13"
+			},
+			{
+				"Title":"Second Heartbeat",
+				"Length":"7:00"
+			},
+			{
+				"Title":"Radiant Eclipse",
+				"Length":"6:10"
+			},
+			{
+				"Title":"I Won't See You Tonight Part 1",
+				"Length":"8:58"
+			},
+			{
+				"Title":"I Won't See You Tonight Part 2",
+				"Length":"4:45"
+			},
+			{
+				"Title":"Clairvoyant Disease",
+				"Length":"5:00"
+			},
+			{
+				"Title":"And All Things Will End",
+				"Length":"7:41"
 			}]
 		},
 		{
-			"Name":"",
-			"Photo":"images/albums/.jpg",
-			"Year":"",
+			"Name":"City of Evil",
+			"Photo":"images/albums/cityEvil.jpg",
+			"Year":"2005",
 			"Songs":
 			[{
-				"Title":"",
-				"Length":""
+				"Title":"Beast and the Harlot",
+				"Length":"5:41"
+			},
+			{
+				"Title":"Burn it Down",
+				"Length":"5:00"
+			},
+			{
+				"Title":"Blinded in Chains",
+				"Length":"6:34"
+			},
+			{
+				"Title":"Bat Country",
+				"Length":"5:13"
+			},
+			{
+				"Title":"Trashed and Scattered",
+				"Length":"5:53"
+			},
+			{
+				"Title":"Seize the Day",
+				"Length":"5:33"
+			},
+			{
+				"Title":"Sidewinder",
+				"Length":"7:02"
+			},
+			{
+				"Title":"The Wicked End",
+				"Length":"7:11"
+			},
+			{
+				"Title":"Strength of the World",
+				"Length":"9:15"
+			},
+			{
+				"Title":"Betrayed",
+				"Length":"6:48"
+			},
+			{
+				"Title":"M.I.A.",
+				"Length":"8:46"
 			}]
 		},
 		{
-			"Name":"",
-			"Photo":"images/albums/.jpg",
-			"Year":"",
+			"Name":"Nightmare",
+			"Photo":"images/albums/nightmare.jpg",
+			"Year":"2010",
 			"Songs":
 			[{
-				"Title":"",
-				"Length":""
+				"Title":"Nightmare",
+				"Length":"6:14"
+			},
+			{
+				"Title":"Welcome to the Family",
+				"Length":"4:05"
+			},
+			{
+				"Title":"Danger Line",
+				"Length":"5:28"
+			},
+			{
+				"Title":"Buried Alive",
+				"Length":"6:44"
+			},
+			{
+				"Title":"Natural Born Killer",
+				"Length":"5:15"
+			},
+			{
+				"Title":"So Far Away",
+				"Length":"5:26"
+			},
+			{
+				"Title":"God Hates Us",
+				"Length":"5:19"
+			},
+			{
+				"Title":"Victim",
+				"Length":"7:29"
+			},
+			{
+				"Title":"Tonight the World Dies",
+				"Length":"4:41"
+			},
+			{
+				"Title":"Fiction",
+				"Length":"5:13"
+			},
+			{
+				"Title":"Save Me",
+				"Length":"10:56"
+			},
+			{
+				"Title":"Lost It All",
+				"Length":"3:57"
 			}]
 		},
 		{
-			"Name":"",
-			"Photo":"images/albums/.jpg",
-			"Year":"",
+			"Name":"Hail to the King",
+			"Photo":"images/albums/hailKing.jpg",
+			"Year":"2013",
 			"Songs":
 			[{
-				"Title":"",
-				"Length":""
+				"Title":"Shepherd of Fire",
+				"Length":"5:24"
+			},
+			{
+				"Title":"Hail to the King",
+				"Length":"5:05"
+			},
+			{
+				"Title":"Doing Time",
+				"Length":"3:26"
+			},
+			{
+				"Title":"This Means War",
+				"Length":"6:09"
+			},
+			{
+				"Title":"Requiem",
+				"Length":"4:22"
+			},
+			{
+				"Title":"Crimson Day",
+				"Length":"4:57"
+			},
+			{
+				"Title":"Heretic",
+				"Length":"4:55"
+			},
+			{
+				"Title":"Coming Home",
+				"Length":"6:25"
+			},
+			{
+				"Title":"Planets",
+				"Length":"5:56"
+			},
+			{
+				"Title":"Acid Rain",
+				"Length":"6:41"
+			}]
+		}]
+	},
+	{
+		"Name":"Disturbed",
+		"Photo":"images/artists/disturbed.jpg",
+		"Bio":"Heavy metal band Disturbed came together through the matching of a band with a singer. Longtime friends Dan Donegan (guitar), Mike Wengren (drums), and Fuzz (bass) played together in Chicago for some time before hooking up with singer David Draiman around 1997.",
+		"Genre":"Metal",
+		"Albums": 
+		[{
+			"Name":"The Sickness",
+			"Photo":"images/albums/sickness.jpg",
+			"Year":"2000",
+			"Songs":
+			[{
+				"Title":"Voices",
+				"Length":"3:12"
+			},
+			{
+				"Title":"The Game",
+				"Length":"3:47"
+			},
+			{
+				"Title":"Stupify",
+				"Length":"4:34"
+			},
+			{
+				"Title":"Down the the Sickness",
+				"Length":"4:38"
+			},
+			{
+				"Title":"Violence Fetish",
+				"Length":"3:24"
+			},
+			{
+				"Title":"Fear",
+				"Length":"3:47"
+			},
+			{
+				"Title":"Numb",
+				"Length":"3:45"
+			},
+			{
+				"Title":"Want",
+				"Length":"3:53"
+			},
+			{
+				"Title":"Conflict",
+				"Length":"4:35"
+			},
+			{
+				"Title":"Shout 2000",
+				"Length":"4:18"
+			},
+			{
+				"Title":"Droppin' Plates",
+				"Length":"3:49"
+			},
+			{
+				"Title":"Meaning of Life",
+				"Length":"4:02"
+			}]
+		},
+		{
+			"Name":"Ten Thousand Fists",
+			"Photo":"images/albums/1000Fists.jpg",
+			"Year":"2005",
+			"Songs":
+			[{
+				"Title":"Ten Thousand Fists",
+				"Length":"3:33"
+			},
+			{
+				"Title":"Just Stop",
+				"Length":"3:46"
+			},
+			{
+				"Title":"Guarded",
+				"Length":"3:22"
+			},
+			{
+				"Title":"Deify",
+				"Length":"4:18"
+			},
+			{
+				"Title":"Stricken",
+				"Length":"4:06"
+			},
+			{
+				"Title":"I'm Alive",
+				"Length":"4:42"
+			},
+			{
+				"Title":"Sons of Plunder",
+				"Length":"3:51"
+			},
+			{
+				"Title":"Overburdened",
+				"Length":"5:59"
+			},
+			{
+				"Title":"Decadance",
+				"Length":"3:26"
+			},
+			{
+				"Title":"Forgiven",
+				"Length":"4:15"
+			},
+			{
+				"Title":"Land of Confusion",
+				"Length":"4:49"
+			},
+			{
+				"Title":"Sacred Lie",
+				"Length":"3:08"
+			},
+			{
+				"Title":"Pain Redefined",
+				"Length":"4:10"
+			},
+			{
+				"Title":"Avarice",
+				"Length":"2:57"
+			},
+			{
+				"Title":"Monster",
+				"Length":"4:04"
+			},
+			{
+				"Title":"Two Worlds",
+				"Length":"3:30"
+			},
+			{
+				"Title":"Hell",
+				"Length":"4:14"
+			},
+			{
+				"Title":"Sickened",
+				"Length":"3:58"
+			}]
+		},
+		{
+			"Name":"Asylum",
+			"Photo":"images/albums/asylum.jpg",
+			"Year":"2010",
+			"Songs":
+			[{
+				"Title":"Remnants",
+				"Length":"2:44"
+			},
+			{
+				"Title":"Asylum",
+				"Length":"4:36"
+			},
+			{
+				"Title":"The Infection",
+				"Length":"4:09"
+			},
+			{
+				"Title":"Warrior",
+				"Length":"3:25"
+			},
+			{
+				"Title":"Another Way to Die",
+				"Length":"4:13"
+			},
+			{
+				"Title":"Never Again",
+				"Length":"3:33"
+			},
+			{
+				"Title":"The Animal",
+				"Length":"4:14"
+			},
+			{
+				"Title":"Crucified",
+				"Length":"4:37"
+			},
+			{
+				"Title":"Serpentine",
+				"Length":"4:09"
+			},
+			{
+				"Title":"My Child",
+				"Length":"3:18"
+			},
+			{
+				"Title":"Sacrifice",
+				"Length":"4:00"
+			},
+			{
+				"Title":"Innocence",
+				"Length":"4:31"
+			},
+			{
+				"Title":"ISHFWILF",
+				"Length":"5:26"
+			},
+			{
+				"Title":"Down With the Sickness (Live)",
+				"Length":"5:53"
+			},
+			{
+				"Title":"Stricken (Live at the Riviera)",
+				"Length":"4:18"
+			}]
+		},
+		{
+			"Name":"The Lost Children",
+			"Photo":"images/albums/lostChildren.jpg",
+			"Year":"2011",
+			"Songs":
+			[{
+				"Title":"Hell",
+				"Length":"4:15"
+			},
+			{
+				"Title":"A Welcome Burden",
+				"Length":"3:32"
+			},
+			{
+				"Title":"This Moment",
+				"Length":"3:06"
+			},
+			{
+				"Title":"Old Friend",
+				"Length":"3:36"
+			},
+			{
+				"Title":"Monster",
+				"Length":"4:04"
+			},
+			{
+				"Title":"Run",
+				"Length":"3:13"
+			},
+			{
+				"Title":"Leave It Alone",
+				"Length":"4:07"
+			},
+			{
+				"Title":"Two Worlds",
+				"Length":"3:33"
+			},
+			{
+				"Title":"God Of The Mind",
+				"Length":"3:06"
+			},
+			{
+				"Title":"Sickened",
+				"Length":"3:59"
+			},
+			{
+				"Title":"Mine",
+				"Length":"5:04"
+			},
+			{
+				"Title":"Parasite",
+				"Length":"3:25"
+			},
+			{
+				"Title":"Dehumanized",
+				"Length":"3:32"
+			},
+			{
+				"Title":"3",
+				"Length":"4:02"
+			},
+			{
+				"Title":"Midlife Crisis",
+				"Length":"4:03"
+			},
+			{
+				"Title":"Living After Midnight",
+				"Length":"4:26"
+			}]
+		},
+		{
+			"Name":"Immortalized",
+			"Photo":"images/albums/mortal.jpg",
+			"Year":"2015",
+			"Songs":
+			[{
+				"Title":"The Eye of the Storm",
+				"Length":"1:21"
+			},
+			{
+				"Title":"Immortalized",
+				"Length":"4:18"
+			},
+			{
+				"Title":"The Vengeful One",
+				"Length":"4:12"
+			},
+			{
+				"Title":"Open Your Eyes",
+				"Length":"3:57"
+			},
+			{
+				"Title":"The Light",
+				"Length":"4:17"
+			},
+			{
+				"Title":"What Are You Waiting For",
+				"Length":"4:04"
+			},
+			{
+				"Title":"You're Mine",
+				"Length":"4:56"
+			},
+			{
+				"Title":"Who",
+				"Length":"4:47"
+			},
+			{
+				"Title":"Save Our Last Goodbye",
+				"Length":"5:00"
+			},
+			{
+				"Title":"Fire It up",
+				"Length":"4:06"
+			},
+			{
+				"Title":"The Sound of Silence",
+				"Length":"4:08"
+			},
+			{
+				"Title":"Never Wrong",
+				"Length":"3:33"
+			},
+			{
+				"Title":"Who Taught You How to Hate",
+				"Length":"4:58"
+			},
+			{
+				"Title":"Tyrant",
+				"Length":"3:49"
+			},
+			{
+				"Title":"Legion of Monsters",
+				"Length":"4:24"
+			},
+			{
+				"Title":"The Brave and the Bold",
+				"Length":"4:34"
+			}]
+		}]
+	},
+	{
+		"Name":"Slipknot",
+		"Photo":"images/artists/slipknot.jpg",
+		"Bio":"Slipknot started in September 1995 with Anders (Colsefni) and Shawn (Crahan). Anders and Shawn hung-out all the time, they would play Werewolf: The Apocalypse (RPG) all the time (where much of the lyrics came from for MFKR).",
+		"Genre":"Heavy Metal",
+		"Albums": 
+		[{
+			"Name":"Iowa",
+			"Photo":"images/albums/iowa.jpg",
+			"Year":"2001",
+			"Songs":
+			[{
+				"Title":"(515)",
+				"Length":"4:04"
+			},
+			{
+				"Title":"People = Shit",
+				"Length":"3:36"
+			},
+			{
+				"Title":"Disasterpiece",
+				"Length":"5:08"
+			},
+			{
+				"Title":"My Plague",
+				"Length":"3:40"
+			},
+			{
+				"Title":"Everything Ends",
+				"Length":"4:14"
+			},
+			{
+				"Title":"The Heretic Anthem",
+				"Length":"4:14"
+			},
+			{
+				"Title":"Gently",
+				"Length":"4:54"
+			},
+			{
+				"Title":"Left Behind",
+				"Length":"3:29"
+			},
+			{
+				"Title":"The Shape",
+				"Length":"3:38"
+			},
+			{
+				"Title":"I Am Hated",
+				"Length":"2:38"
+			},
+			{
+				"Title":"Skin Ticket",
+				"Length":"6:04"
+			},
+			{
+				"Title":"New Abortion",
+				"Length":"3:37"
+			},
+			{
+				"Title":"Metabolic",
+				"Length":"3:59"
+			},
+			{
+				"Title":"Iowa",
+				"Length":"15:05"
+			},
+			{
+				"Title":"Liberate (Live)",
+				"Length":"4:26"
+			}]
+		},
+		{
+			"Name":"Slipknot",
+			"Photo":"images/albums/slipknot.jpg",
+			"Year":"1999",
+			"Songs":
+			[{
+				"Title":"742617000027",
+				"Length":"1:44"
+			},
+			{
+				"Title":"(Sic)",
+				"Length":"3:20"
+			},
+			{
+				"Title":"Eyeless",
+				"Length":"3:56"
+			},
+			{
+				"Title":"Wait and Bleed",
+				"Length":"2:28"
+			},
+			{
+				"Title":"Surfacing",
+				"Length":"3:38"
+			},
+			{
+				"Title":"Spit It Out",
+				"Length":"2:40"
+			},
+			{
+				"Title":"Tattered & Torn",
+				"Length":"2:54"
+			},
+			{
+				"Title":"Frail Limb Nursery",
+				"Length":"0:45"
+			},
+			{
+				"Title":"Purity",
+				"Length":"4:14"
+			},
+			{
+				"Title":"Liberate",
+				"Length":"3:07"
+			},
+			{
+				"Title":"Prosthetics",
+				"Length":"4:58"
+			},
+			{
+				"Title":"No Life",
+				"Length":"2:47"
+			},
+			{
+				"Title":"Diluted",
+				"Length":"3:23"
+			},
+			{
+				"Title":"Only One",
+				"Length":"2:26"
+			},
+			{
+				"Title":"Scissors",
+				"Length":"8:23"
+			},
+			{
+				"Title":"Me Inside",
+				"Length":"2:39"
+			},
+			{
+				"Title":"Get This",
+				"Length":"2:03"
+			},
+			{
+				"Title":"Interloper (demo)",
+				"Length":"2:18"
+			}]
+		},
+		{
+			"Name":"Vol. 3",
+			"Photo":"images/albums/vol.jpg",
+			"Year":"2005",
+			"Songs":
+			[{
+				"Title":"Prelude",
+				"Length":"3:57"
+			},
+			{
+				"Title":"The Blister Exists",
+				"Length":"5:19"
+			},
+			{
+				"Title":"Three Nil",
+				"Length":"4:48"
+			},
+			{
+				"Title":"Duality",
+				"Length":"4:13"
+			},
+			{
+				"Title":"Opium of the People",
+				"Length":"3:13"
+			},
+			{
+				"Title":"Circle",
+				"Length":"4:23"
+			},
+			{
+				"Title":"Welcome",
+				"Length":"3:15"
+			},
+			{
+				"Title":"Vermilion",
+				"Length":"5:17"
+			},
+			{
+				"Title":"Pulse of the Maggots",
+				"Length":"4:20"
+			},
+			{
+				"Title":"Before I Forget",
+				"Length":"4:39"
+			},
+			{
+				"Title":"Vermilion Pt. 2",
+				"Length":"3:44"
+			},
+			{
+				"Title":"The Nameless",
+				"Length":"4:28"
+			},
+			{
+				"Title":"The Virus of Life",
+				"Length":"5:25"
+			},
+			{
+				"Title":"Danger - Keep Away",
+				"Length":"5:46"
+			}]
+		},
+		{
+			"Name":"All Hope Is Gone",
+			"Photo":"images/albums/allHope.jpg",
+			"Year":"2008",
+			"Songs":
+			[{
+				"Title":".execute.",
+				"Length":"1:49"
+			},
+			{
+				"Title":"Gematria (The Killing Name)",
+				"Length":"6:02"
+			},
+			{
+				"Title":"Sulfur",
+				"Length":"4:02"
+			},
+			{
+				"Title":"Psychosocial",
+				"Length":"4:44"
+			},
+			{
+				"Title":"Dead Memories",
+				"Length":"4:04"
+			},
+			{
+				"Title":"Vendetta",
+				"Length":"5:16"
+			},
+			{
+				"Title":"Butcher's Hook",
+				"Length":"4:15"
+			},
+			{
+				"Title":"Gehenna",
+				"Length":"6:53"
+			},
+			{
+				"Title":"This Cold Black",
+				"Length":"4:40"
+			},
+			{
+				"Title":"Wherein Lies Continue",
+				"Length":"5:37"
+			},
+			{
+				"Title":"Snuff",
+				"Length":"4:36"
+			},
+			{
+				"Title":"All Hope Is Gone",
+				"Length":"4:44"
+			},
+			{
+				"Title":"Child of Burning Time",
+				"Length":"5:10"
+			},
+			{
+				"Title":"Vermilion Part 2 (Bloodstone mix)",
+				"Length":"3:40"
+			},
+			{
+				"Title":"'til We Die",
+				"Length":"5:46"
+			}]
+		},
+		{
+			"Name":"The Gray Chapter",
+			"Photo":"images/albums/grayChapter.jpg",
+			"Year":"2014",
+			"Songs":
+			[{
+				"Title":"XIX",
+				"Length":"3:10"
+			},
+			{
+				"Title":"Sarcastrophe",
+				"Length":"5:06"
+			},
+			{
+				"Title":"AOV",
+				"Length":"5:33"
+			},
+			{
+				"Title":"The Devil In I",
+				"Length":"5:43"
+			},
+			{
+				"Title":"Killpop",
+				"Length":"3:45"
+			},
+			{
+				"Title":"Skeptic",
+				"Length":"4:47"
+			},
+			{
+				"Title":"Lech",
+				"Length":"4:50"
+			},
+			{
+				"Title":"Goodbye",
+				"Length":"4:35"
+			},
+			{
+				"Title":"Nomadic",
+				"Length":"4:18"
+			},
+			{
+				"Title":"The One That Kills The Least",
+				"Length":"4:12"
+			},
+			{
+				"Title":"Custer",
+				"Length":"4:14"
+			},
+			{
+				"Title":"Be Prepared For Hell",
+				"Length":"1:58"
+			},
+			{
+				"Title":"The Negative One",
+				"Length":"5:25"
+			},
+			{
+				"Title":"If Rain Is What You Want",
+				"Length":"6:21"
+			},
+			{
+				"Title":"Override",
+				"Length":"5:37"
+			},
+			{
+				"Title":"The Burden",
+				"Length":"5:23"
+			}]
+		}]
+	},
+	{
+		"Name":"Megadeth",
+		"Photo":"images/artists/megadeth.jpg",
+		"Bio":"When guitarist Dave Mustaine was booted out of Metallica early in its career, he formed Megadeth, which continued his former group's thrash-metal style with even more speed and intensity.",
+		"Genre":"Heavy Metal",
+		"Albums": 
+		[{
+			"Name":"Peace Sells",
+			"Photo":"images/albums/peaceSells.jpg",
+			"Year":"1986",
+			"Songs":
+			[{
+				"Title":"Wake Up Dead",
+				"Length":"3:33"
+			},
+			{
+				"Title":"The Conjuring",
+				"Length":"5:02"
+			},
+			{
+				"Title":"Peace Sells",
+				"Length":"4:03"
+			},
+			{
+				"Title":"Devils Island",
+				"Length":"5:05"
+			},
+			{
+				"Title":"Good Mourning / Black Friday",
+				"Length":"6:42"
+			},
+			{
+				"Title":"Bad Omen",
+				"Length":"4:05"
+			},
+			{
+				"Title":"I Ain't Superstitious",
+				"Length":"2:45"
+			},
+			{
+				"Title":"My Last Words",
+				"Length":"4:42"
+			}]
+		},
+		{
+			"Name":"Rust In Peace",
+			"Photo":"images/albums/rustPeace.jpg",
+			"Year":"1990",
+			"Songs":
+			[{
+				"Title":"Holy Wars... The Punishment Due",
+				"Length":"6:32"
+			},
+			{
+				"Title":"Hangar 18",
+				"Length":"4:47"
+			},
+			{
+				"Title":"Take No Prisoners",
+				"Length":"5:33"
+			},
+			{
+				"Title":"Five Magics",
+				"Length":"5:40"
+			},
+			{
+				"Title":"Poison Was the Cure",
+				"Length":"4:45"
+			},
+			{
+				"Title":"Lucretia",
+				"Length":"3:53"
+			},
+			{
+				"Title":"Tornado of Souls",
+				"Length":"5:19"
+			},
+			{
+				"Title":"Dawn Patrol",
+				"Length":"1:51"
+			},
+			{
+				"Title":"Rust In Peace... Polaris",
+				"Length":"5:37"
+			}]
+		},
+		{
+			"Name":"Countdown to Extinction",
+			"Photo":"images/albums/countdown.jpg",
+			"Year":"1992",
+			"Songs":
+			[{
+				"Title":"Skin O'My Teeth",
+				"Length":"3:13"
+			},
+			{
+				"Title":"Symphony of Destruction",
+				"Length":"4:03"
+			},
+			{
+				"Title":"Architecture of Aggression",
+				"Length":"3:35"
+			},
+			{
+				"Title":"Foreclosure of a Dream",
+				"Length":"4:06"
+			},
+			{
+				"Title":"Sweating Bullets",
+				"Length":"5:03"
+			},
+			{
+				"Title":"This Was My Life",
+				"Length":"3:32"
+			},
+			{
+				"Title":"Countdown to Extinction",
+				"Length":"4:15"
+			},
+			{
+				"Title":"High Speed Dirt",
+				"Length":"4:12"
+			},
+			{
+				"Title":"Psychotron",
+				"Length":"4:42"
+			},
+			{
+				"Title":"Captive Honour",
+				"Length":"4:15"
+			},
+			{
+				"Title":"Ashes In Your Mouth",
+				"Length":"6:05"
+			}]
+		},
+		{
+			"Name":"Youthanasia",
+			"Photo":"images/albums/youth.jpg",
+			"Year":"1994",
+			"Songs":
+			[{
+				"Title":"Reckoning Day",
+				"Length":"4:35"
+			},
+			{
+				"Title":"Train of Consequences",
+				"Length":"3:26"
+			},
+			{
+				"Title":"Addicted to Chaos",
+				"Length":"5:26"
+			},
+			{
+				"Title":"A Tout Le Monde",
+				"Length":"4:22"
+			},
+			{
+				"Title":"Elysian Fields",
+				"Length":"4:03"
+			},
+			{
+				"Title":"The Killing Road",
+				"Length":"3:58"
+			},
+			{
+				"Title":"Blood of Heroes",
+				"Length":"3:58"
+			},
+			{
+				"Title":"Family Tree",
+				"Length":"4:07"
+			},
+			{
+				"Title":"Youthanasia",
+				"Length":"4:08"
+			},
+			{
+				"Title":"I Thought I Knew It All",
+				"Length":"3:42"
+			},
+			{
+				"Title":"Black Curtains",
+				"Length":"3:38"
+			},
+			{
+				"Title":"Victory",
+				"Length":"4:27"
+			}]
+		},
+		{
+			"Name":"Dystopia",
+			"Photo":"images/albums/dystopia.jpg",
+			"Year":"2016",
+			"Songs":
+			[{
+				"Title":"The Threat Is Real",
+				"Length":"4:22"
+			},
+			{
+				"Title":"Dystopia",
+				"Length":"4:59"
+			},
+			{
+				"Title":"Fatal Illusion",
+				"Length":"4:15"
+			},
+			{
+				"Title":"Death From Within",
+				"Length":"4:47"
+			},
+			{
+				"Title":"Bullet to the Brain",
+				"Length":"4:29"
+			},
+			{
+				"Title":"Post American World",
+				"Length":"4:25"
+			},
+			{
+				"Title":"Poisonous Shadows",
+				"Length":"6:02"
+			},
+			{
+				"Title":"Look Who's Talking",
+				"Length":"4:14"
+			},
+			{
+				"Title":"Conquer Or Die",
+				"Length":"3:33"
+			},
+			{
+				"Title":"Lying In State",
+				"Length":"3:34"
+			},
+			{
+				"Title":"The Emperor",
+				"Length":"3:52"
+			},
+			{
+				"Title":"Last Dying Wish",
+				"Length":"3:49"
+			},
+			{
+				"Title":"Foreign Policy",
+				"Length":"2:28"
 			}]
 		}]
 	}]

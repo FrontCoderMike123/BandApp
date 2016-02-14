@@ -6,6 +6,13 @@ body {
   text-align: center;
 }
 
+.openingLine
+{
+  text-align: left;
+  
+  padding:10px;
+}
+
 h1,h2,h3,h4,h5,h6,span,a
 {
   font-family: 'Anton', sans-serif;
@@ -46,12 +53,14 @@ img
 #bandWrapper
 {
   overflow: hidden;
+  clear: both;
 }
 
 #bandWrapper li
 {
   width: 20%;
   float: left;
+  cursor: pointer;
 }
 
 .titles
@@ -69,6 +78,32 @@ img
 {
   padding: 10px 0;
   font-size: 1.2em;
+}
+
+#albumContainer
+{
+  clear: both;
+  overflow: hidden;
+}
+
+#albumContainer button
+{
+  width: 10%;
+  float: left;
+  height: 55px;
+}
+
+.buttonHolder
+{
+  width: 100%;
+  clear: both;
+}
+
+.animation
+{
+  width: 100%;
+  float: left;
+  margin-top: 10px;
 }
 
 ul.img-list img
@@ -112,4 +147,19 @@ ul.img-list li:hover span.text-content {
   opacity: 1;
     -moz-opacity:1;
     -webkit-opacity:1;
+}
+
+.animation.ng-hide-add,
+.animation.ng-hide-remove {
+  -webkit-transition:5s linear all;
+  -moz-transition:5s linear all;
+  -o-transition:5s linear all;
+  transition:5s linear all;
+  display:block!important;
+}
+.animation.ng-hide-remove {
+  opacity:0;
+}
+.animation.ng-hide-remove.ng-hide-remove-active {
+  opacity:1;
 }
