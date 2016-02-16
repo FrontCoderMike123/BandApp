@@ -1,0 +1,41 @@
+<div id="bandWrapper">
+<ul class="img-list">
+  <li data-ng-repeat="band in bands">
+    <a class="detailsLink" href="#/details/{{band._id}}">
+      <img data-ng-src="{{band.Photo}}">
+      <span class="text-content"><span>{{band.Name}}<br>Biography</span></span>
+    </a>
+  </li>
+</ul>
+</div>
+
+<div id="albumContainer" ng-init="isHidden=true">
+      <button ng-click="isHidden=!isHidden">View Albums</button>
+    <div data-ng-repeat="band in bands">
+        <div class="animation" ng-hide="isHidden">
+          <h3 class="artistNames">{{band.Name}}</h3>
+          <ul class="album-list">
+            <li>
+              <img data-ng-src="{{band.Albums[0].Photo}}">
+              <span class="album-content"><span>{{band.Albums[0].Name}}</span></span>
+            </li>
+            <li>
+              <img data-ng-src="{{band.Albums[1].Photo}}">
+              <span class="album-content"><span>{{band.Albums[1].Name}}</span></span>
+            </li>
+            <li>
+              <img data-ng-src="{{band.Albums[2].Photo}}">
+              <span class="album-content"><span>{{band.Albums[2].Name}}</span></span>
+            </li>
+            <li>
+              <img data-ng-src="{{band.Albums[3].Photo}}">
+              <span class="album-content"><span>{{band.Albums[3].Name}}</span></span>
+            </li>
+            <li>
+              <img data-ng-src="{{band.Albums[4].Photo}}">
+              <span class="album-content"><span>{{band.Albums[4].Name}}</span></span>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>

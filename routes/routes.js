@@ -1,12 +1,15 @@
 var express = require('express');
 var path = require('path');
-
 var router = express.Router();
 var mongoose = require('mongoose');
 var Band = require('../models/Band.js');
 
 router.get('/',function(req,res){
-  res.sendFile(path.join(__dirname, '../public/views', 'index.html'));
+  //res.sendFile(path.join(__dirname, '../public/views', 'index.html'));
+  res.render('index', {
+        title: 'Bands & Albums'
+        //info: data
+      });
 });
 
 router.get('/bands', function(req,res,next){
@@ -29,6 +32,10 @@ router.get('/details/:id', function(req,res,next){
   Band.findById(req.params.id,function(err,band){
     if(err)return next(err);
     res.json(band);
+    res.render('details', {
+        title: 'Biography'
+        //info: data
+      });
   });
 });
 

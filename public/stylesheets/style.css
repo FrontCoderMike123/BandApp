@@ -6,13 +6,6 @@ body {
   text-align: center;
 }
 
-.openingLine
-{
-  text-align: left;
-  
-  padding:10px;
-}
-
 h1,h2,h3,h4,h5,h6,span,a
 {
   font-family: 'Anton', sans-serif;
@@ -46,7 +39,7 @@ img
 #container h1, #container h3
 {
   font-size: 2em;
-  margin: 20px 0 10px 0;
+  margin: 20px 0;
   display: block;
 }
 
@@ -88,22 +81,87 @@ img
 
 #albumContainer button
 {
-  width: 10%;
-  float: left;
-  height: 55px;
+ border: none;
+  background-color: rgba(255,255,255,.5);
+  display: block;
+  margin: 5px 0 5px 5px;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  border: 1px solid rgba(55,55,55,.5);
+  cursor: pointer;
 }
 
-.buttonHolder
+#albumContainer button:hover
 {
-  width: 100%;
-  clear: both;
+  box-shadow: inset 0 0 5px rgba(0,0,0,.5);
+  text-shadow: none;
 }
 
-.animation
+.artistNames
 {
+  text-align: left;
+  padding: 0 0 10px 10px;
+  margin-bottom: 30px!
+  display: block;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.65+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+}
+
+.animation img
+{
+  border-radius: 3px;
+  border: thin solid #ccc;
+}
+
+.animation:last-child
+{
+  margin-bottom: 20px;
+}
+
+ul.album-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+ 
+ul.album-list li {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin: 0 10px;
+}
+
+span.album-content {
+  background: rgba(53,53,53,.8);
+  border-radius: 3px;
+  border: thin solid #ccc;
+  line-height: 22px;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: bold;
+  display: table;
+  left: 0;
+  position: absolute;
+  top: 0;
   width: 100%;
-  float: left;
-  margin-top: 10px;
+  opacity: 0;
+  -moz-opacity:0;
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+ul.album-list li:hover span.album-content {
+  opacity: 1;
+    -moz-opacity:1;
+    -webkit-opacity:1;
 }
 
 ul.img-list img
@@ -126,8 +184,10 @@ ul.img-list li {
 
 span.text-content {
   background: rgba(53,53,53,.8);
-  padding: 23.6% 0;
+  line-height: 22px;
+  padding: 20.6% 0;
   color: #fff;
+  letter-spacing: 1px;
   font-weight: bold;
   display: table;
   left: 0;

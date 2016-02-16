@@ -3,12 +3,12 @@ var bandApp = angular.module('bandApp', ['ui.router','ngAnimate']);
 bandApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
 	$stateProvider.state('bands',{
 		url: '/bands',
-		templateUrl: 'views/list.html',
+		templateUrl: 'views/bands.ejs',
 		controller: 'mainCtrl'
 	});
 	$stateProvider.state('details', {
   		url: '/details/{id}',
-  		templateUrl: 'views/details.html',
+  		templateUrl: 'views/details.ejs',
   		controller: 'detailsCtrl'
 	});
 	$urlRouterProvider.otherwise('/bands');
@@ -22,7 +22,7 @@ bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
 
 bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams', function($scope,$http,$stateParams) {
   var ID = $stateParams.id;
-  $http.get('/details/'+ID).then(function(bands) {
+  $http.get('/details/').then(function(bands) {
     $scope.Name = bands.data[$stateParams.id].Name;
     //console.log(ID); Properly spits out the RIGHT ID!!
   });

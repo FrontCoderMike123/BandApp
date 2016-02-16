@@ -3,16 +3,17 @@
 <head>
     <% include ../views/partials/head %>
 </head>
-<body>
+<body data-ng-app="bandApp">
     <header>
       <% include ../views/partials/header %>
     </header>
 
 <section id="intro">
+  <div id="container">
     <h1><%= title %></h1>
-    <div>
-      <p><%= comment %></p>
-    </div>
+    <ui-view>
+    </ui-view>
+  </div>
 </section>
 
     <footer>
