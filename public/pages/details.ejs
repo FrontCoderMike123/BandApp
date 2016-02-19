@@ -1,0 +1,39 @@
+<div id="bioContainer">
+<div>
+<h3 class="NAME" data-ng-bind-html="bandName"></h3>
+<p class="GENRE" data-ng-bind-html="bandGenre"></p>
+<img data-ng-src="{{bandPic}}">
+</div>
+<p class="BIO" data-ng-bind-html="bandBio"></p>
+<a href="#/">Back</a>
+</div><!--bio Container-->
+
+<div id="bioAlbumCon">
+	<ul>
+        <li>
+        <a href="#/albumDetails/{{album1ID}}">
+        <img data-ng-src="{{album1}}">
+    	</a>
+        </li>
+        <li>
+        <a href="#/albumDetails/{{album2ID}}">
+        <img data-ng-src="{{album2}}">
+    	</a>
+        </li>
+        <li>
+        <a href="#/albumDetails/{{album3ID}}">
+        <img data-ng-src="{{album3}}">
+    	</a>
+        </li>
+        <li>
+        <a href="#/albumDetails/{{album4ID}}">
+        <img data-ng-src="{{album4}}">
+    	</a>
+        </li>
+        <li>
+        <a href="#/albumDetails/{{album5ID}}">
+        <img data-ng-src="{{album5}}">
+    	</a>
+        </li>
+    </ul>
+</div>

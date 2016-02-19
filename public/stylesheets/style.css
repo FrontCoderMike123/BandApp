@@ -30,10 +30,18 @@ img
 {
   background-color: rgba(0,0,0,.6);
   width: 95%;
-  margin: 2.5% auto;
+  margin: 1.5% auto;
   border-radius: 5px;
   border: thin solid #444;
   color: white;
+  overflow: hidden;
+}
+
+header h1
+{
+  font-size: 2em;
+  margin: 20px 0 0 0;
+  display: block;
 }
 
 #container h1, #container h3
@@ -122,6 +130,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   margin-bottom: 20px;
 }
 
+ul.album-list img
+{
+  display: block;
+  border-radius: 5px;
+}
+
 ul.album-list {
   list-style-type: none;
   margin: 0;
@@ -130,17 +144,28 @@ ul.album-list {
 }
  
 ul.album-list li {
-  position: relative;
   display: inline-block;
-  width: 200px;
-  margin: 0 10px;
+  margin: 0 5px;
+  position: relative;
+}
+
+ul.album-list li p
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+  background-color: rgba(0,0,0,.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 span.album-content {
   background: rgba(53,53,53,.8);
-  border-radius: 3px;
-  border: thin solid #ccc;
-  line-height: 22px;
+  line-height: 22px!important;
+  padding: 44.5% 0!important;
+  width: 100%!important;
   color: #fff;
   letter-spacing: 1px;
   font-weight: bold;
@@ -148,7 +173,6 @@ span.album-content {
   left: 0;
   position: absolute;
   top: 0;
-  width: 100%;
   opacity: 0;
   -moz-opacity:0;
   -webkit-opacity:0;
@@ -223,3 +247,82 @@ ul.img-list li:hover span.text-content {
 .animation.ng-hide-remove.ng-hide-remove-active {
   opacity:1;
 }
+
+/***************************DETAILS PAGE********************************/
+#bioContainer
+{
+  overflow: hidden;
+  margin: 0;
+  padding: 1%;
+}
+
+.NAME,.GENRE
+{
+  clear: both;
+  display: block;
+}
+
+.NAME
+{
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,.7);
+  padding: 6px 0;
+}
+
+.GENRE
+{
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  z-index: 1;
+  font-size: 1.1em;
+}
+
+#bioContainer img
+{
+  width: 600px;
+}
+
+#bioContainer div
+{
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 600px;
+}
+
+.BIO
+{
+  float: left;
+  width: 500px;
+  text-align: left;
+  margin-left: 5px;
+  font-size: 1.2em;
+  line-height: 34px;
+  background: rgba(0,0,0,.5);
+  padding: 5px 10px;
+  border: thin solid #ebebeb;
+}
+
+#bioAlbumCon
+{
+  overflow: hidden;
+}
+
+#bioAlbumCon ul
+{
+  text-align: center;
+}
+
+#bioAlbumCon li
+{
+  display: inline-block;
+  margin: 0 5px 10px 5px;;
+}
+
+

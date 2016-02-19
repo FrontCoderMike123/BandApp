@@ -7,6 +7,7 @@
 		"Genre":"Heavy Metal",
 		"Albums":
 			[{
+				"ID":"1",
 				"Name":"Metallica",
 				"Photo":"images/albums/metallica.jpg",
 				"Year":"1991",
@@ -61,6 +62,7 @@
 				}]
 			},
 			{
+				"ID":"2",
 				"Name":"Ride the Lightning",
 				"Photo":"images/albums/lightning.jpg",
 				"Year":"1984",
@@ -99,6 +101,7 @@
 				}]
 			},
 			{
+				"ID":"3",
 				"Name":"Kill em' All",
 				"Photo":"images/albums/kill.jpg",
 				"Year":"1983",
@@ -145,6 +148,7 @@
 				}]
 			},
 			{
+				"ID":"4",
 				"Name":"Death Magnetic",
 				"Photo":"images/albums/death.jpg",
 				"Year":"2008",
@@ -191,8 +195,9 @@
 				}]
 			},
 			{
+				"ID":"5",
 				"Name":"And Justice for All",
-				"Photo":"images/albums/kill.jpg",
+				"Photo":"images/albums/justice.jpg",
 				"Year":"1988",
 				"Songs":
 				[{
@@ -240,6 +245,7 @@
 		"Genre":"Death Metal",
 		"Albums":
 			[{
+				"ID":"1",
 				"Name":"Repentless",
 				"Photo":"images/albums/repentless.jpg",
 				"Year":"2015",
@@ -294,6 +300,7 @@
 				}]
 			},
 			{
+				"ID":"2",
 				"Name":"Reign In Blood",
 				"Photo":"images/albums/blood.jpg",
 				"Year":"1986",
@@ -340,6 +347,7 @@
 				}]
 			},
 			{
+				"ID":"3",
 				"Name":"South of Heaven",
 				"Photo":"images/albums/heaven.jpg",
 				"Year":"1988",
@@ -386,6 +394,7 @@
 				}]
 			},
 			{
+				"ID":"4",
 				"Name":"Seasons of the Abyss",
 				"Photo":"images/albums/abyss.jpg",
 				"Year":"1990",
@@ -432,6 +441,7 @@
 				}]
 			},
 			{
+				"ID":"5",
 				"Name":"God Hates Us All",
 				"Photo":"images/albums/hate.jpg",
 				"Year":"2001",
@@ -497,6 +507,7 @@
 		"Genre":"Heavy Metal",
 		"Albums":
 			[{
+				"ID":"1",
 				"Name":"Pain Killer",
 				"Photo":"images/albums/killer.jpg",
 				"Year":"1990",
@@ -543,6 +554,7 @@
 				}]
 			},
 			{
+				"ID":"2",
 				"Name":"British Steel",
 				"Photo":"images/albums/steel.jpg",
 				"Year":"1980",
@@ -593,6 +605,7 @@
 				}]
 			},
 			{
+				"ID":"3",
 				"Name":"Redeemer of Souls",
 				"Photo":"images/albums/souls.jpg",
 				"Year":"2014",
@@ -671,6 +684,7 @@
 				}]
 			},
 			{
+				"ID":"4",
 				"Name":"Defenders of the Faith",
 				"Photo":"images/albums/faith.jpg",
 				"Year":"1984",
@@ -717,6 +731,7 @@
 				}]
 			},
 			{
+				"ID":"5",
 				"Name":"Sad Wings of Destiny",
 				"Photo":"images/albums/wings.jpg",
 				"Year":"1976",
@@ -766,6 +781,7 @@
 		"Genre":"Metal",
 		"Albums":
 			[{
+				"ID":"1",
 				"Name":"Ashes of the Wake",
 				"Photo":"images/albums/ashes.jpg",
 				"Year":"2004",
@@ -816,6 +832,7 @@
 				}]
 			},
 			{
+				"ID":"2",
 				"Name":"Wrath",
 				"Photo":"images/albums/wrath.jpg",
 				"Year":"2009",
@@ -878,6 +895,7 @@
 				}]
 			},
 			{
+				"ID":"3",
 				"Name":"Sacrament",
 				"Photo":"images/albums/sacrament.jpg",
 				"Year":"2006",
@@ -928,6 +946,7 @@
 				}]
 			},
 			{
+				"ID":"4",
 				"Name":"Resolution",
 				"Photo":"images/albums/resolution.jpg",
 				"Year":"2012",
@@ -990,6 +1009,7 @@
 				}]
 			},
 			{
+				"ID":"5",
 				"Name":"As the Palaces Burn",
 				"Photo":"images/albums/burn.jpg",
 				"Year":"2003",
@@ -1043,6 +1063,7 @@
 		"Genre":"Metal",
 		"Albums":
 			[{
+				"ID":"1",
 				"Name":"Physical Graffiti",
 				"Photo":"images/albums/graf.jpg",
 				"Year":"1975",
@@ -1109,6 +1130,7 @@
 				}]
 			},
 			{
+				"ID":"2",
 				"Name":"Led Zeppelin IV",
 				"Photo":"images/albums/led.jpg",
 				"Year":"1971",
@@ -1147,6 +1169,7 @@
 				}]
 			},
 			{
+				"ID":"3",
 				"Name":"Houses of the Holy",
 				"Photo":"images/albums/holy.jpg",
 				"Year":"1973",
@@ -1185,6 +1208,7 @@
 				}]
 			},
 			{
+				"ID":"4",
 				"Name":"Presence",
 				"Photo":"images/albums/presence.jpg",
 				"Year":"1976",
@@ -1219,6 +1243,7 @@
 				}]
 			},
 			{
+				"ID":"5",
 				"Name":"Mothership",
 				"Photo":"images/albums/ship.jpg",
 				"Year":"2007",
@@ -1328,6 +1353,7 @@
 		"Genre":"Metal",
 		"Albums": 
 		[{
+			"ID":"1",
 			"Name":"Killers",
 			"Photo":"images/albums/killers.jpg",
 			"Year":"1981",
@@ -1378,6 +1404,7 @@
 			}]
 		},
 		{
+			"ID":"2",
 			"Name":"Fear of the Dark",
 			"Photo":"images/albums/fearDark.jpg",
 			"Year":"1992",
@@ -1432,6 +1459,7 @@
 			}]
 		},
 		{
+			"ID":"3",
 			"Name":"Number of the Beast",
 			"Photo":"images/albums/beast.jpg",
 			"Year":"1982",
@@ -1470,6 +1498,7 @@
 			}]
 		},
 		{
+			"ID":"4",
 			"Name":"Powerslave",
 			"Photo":"images/albums/powerSlave.jpg",
 			"Year":"1984",
@@ -1508,6 +1537,7 @@
 			}]
 		},
 		{
+			"ID":"5",
 			"Name":"Piece of Mind",
 			"Photo":"images/albums/pieceMind.jpg",
 			"Year":"1983",
@@ -1561,6 +1591,7 @@
 		"Genre":"Heavy Metal",
 		"Albums": 
 		[{
+			"ID":"1",
 			"Name":"Sounding the Seventh Trumpet",
 			"Photo":"images/albums/trumpet.jpg",
 			"Year":"2001",
@@ -1619,6 +1650,7 @@
 			}]
 		},
 		{
+			"ID":"2",
 			"Name":"Waking the Fallen",
 			"Photo":"images/albums/waking.jpg",
 			"Year":"2003",
@@ -1673,6 +1705,7 @@
 			}]
 		},
 		{
+			"ID":"3",
 			"Name":"City of Evil",
 			"Photo":"images/albums/cityEvil.jpg",
 			"Year":"2005",
@@ -1723,6 +1756,7 @@
 			}]
 		},
 		{
+			"ID":"4",
 			"Name":"Nightmare",
 			"Photo":"images/albums/nightmare.jpg",
 			"Year":"2010",
@@ -1777,6 +1811,7 @@
 			}]
 		},
 		{
+			"ID":"5",
 			"Name":"Hail to the King",
 			"Photo":"images/albums/hailKing.jpg",
 			"Year":"2013",
@@ -1830,6 +1865,7 @@
 		"Genre":"Metal",
 		"Albums": 
 		[{
+			"ID":"1",
 			"Name":"The Sickness",
 			"Photo":"images/albums/sickness.jpg",
 			"Year":"2000",
@@ -1884,6 +1920,7 @@
 			}]
 		},
 		{
+			"ID":"2",
 			"Name":"Ten Thousand Fists",
 			"Photo":"images/albums/1000Fists.jpg",
 			"Year":"2005",
@@ -1962,6 +1999,7 @@
 			}]
 		},
 		{
+			"ID":"3",
 			"Name":"Asylum",
 			"Photo":"images/albums/asylum.jpg",
 			"Year":"2010",
@@ -2028,6 +2066,7 @@
 			}]
 		},
 		{
+			"ID":"4",
 			"Name":"The Lost Children",
 			"Photo":"images/albums/lostChildren.jpg",
 			"Year":"2011",
@@ -2098,6 +2137,7 @@
 			}]
 		},
 		{
+			"ID":"5",
 			"Name":"Immortalized",
 			"Photo":"images/albums/mortal.jpg",
 			"Year":"2015",
@@ -2175,6 +2215,7 @@
 		"Genre":"Heavy Metal",
 		"Albums": 
 		[{
+			"ID":"1",
 			"Name":"Iowa",
 			"Photo":"images/albums/iowa.jpg",
 			"Year":"2001",
@@ -2241,6 +2282,7 @@
 			}]
 		},
 		{
+			"ID":"2",
 			"Name":"Slipknot",
 			"Photo":"images/albums/slipknot.jpg",
 			"Year":"1999",
@@ -2319,6 +2361,7 @@
 			}]
 		},
 		{
+			"ID":"3",
 			"Name":"Vol. 3",
 			"Photo":"images/albums/vol.jpg",
 			"Year":"2005",
@@ -2381,6 +2424,7 @@
 			}]
 		},
 		{
+			"ID":"4",
 			"Name":"All Hope Is Gone",
 			"Photo":"images/albums/allHope.jpg",
 			"Year":"2008",
@@ -2447,6 +2491,7 @@
 			}]
 		},
 		{
+			"ID":"5",
 			"Name":"The Gray Chapter",
 			"Photo":"images/albums/grayChapter.jpg",
 			"Year":"2014",
@@ -2524,6 +2569,7 @@
 		"Genre":"Heavy Metal",
 		"Albums": 
 		[{
+			"ID":"1",
 			"Name":"Peace Sells",
 			"Photo":"images/albums/peaceSells.jpg",
 			"Year":"1986",
@@ -2562,6 +2608,7 @@
 			}]
 		},
 		{
+			"ID":"2",
 			"Name":"Rust In Peace",
 			"Photo":"images/albums/rustPeace.jpg",
 			"Year":"1990",
@@ -2604,6 +2651,7 @@
 			}]
 		},
 		{
+			"ID":"3",
 			"Name":"Countdown to Extinction",
 			"Photo":"images/albums/countdown.jpg",
 			"Year":"1992",
@@ -2654,6 +2702,7 @@
 			}]
 		},
 		{
+			"ID":"4",
 			"Name":"Youthanasia",
 			"Photo":"images/albums/youth.jpg",
 			"Year":"1994",
@@ -2708,6 +2757,7 @@
 			}]
 		},
 		{
+			"ID":"5",
 			"Name":"Dystopia",
 			"Photo":"images/albums/dystopia.jpg",
 			"Year":"2016",
