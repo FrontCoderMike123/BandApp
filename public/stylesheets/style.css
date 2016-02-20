@@ -3,6 +3,7 @@ body {
   position: relative;
   overflow-x: hidden;
   text-align: center;
+  margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6,span,a,button
@@ -33,7 +34,6 @@ img
   border-radius: 5px;
   border: thin solid #444;
   color: white;
-  overflow: hidden;
 }
 
 header h1
@@ -220,19 +220,50 @@ ul.img-list li:hover span.text-content {
     -webkit-opacity:1;
 }
 
-.animation.ng-hide-add,
-.animation.ng-hide-remove {
-  -webkit-transition:all 5s ease;
-  -moz-transition:all 5s ease;;
-  -o-transition:all 5s ease;;
-  transition:all 5s ease;;
-  display:block!important;
-}
 .animation.ng-hide-remove {
   opacity:0;
 }
 .animation.ng-hide-remove.ng-hide-remove-active {
   opacity:1;
+}
+
+#container
+{
+  position: relative;
+}
+
+#container > .view.ng-animate {
+  position:absolute;
+  top: 0;
+  left:0;
+  z-index: 100;
+  width:100%;
+  background:#333;
+}
+.view.ng-enter, .view.ng-leave,
+.detailsLink.ng-anchor {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+.view.ng-enter {
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  transform:translateX(100%);
+}
+.view.ng-enter.ng-enter-active, .view.ng-leave {
+  -webkit-transform:translateX(0%);
+  -moz-transform:translateX(0%);
+  -o-transform:translateX(0%);
+  transform:translateX(0%);
+}
+.view.ng-leave.ng-leave-active {
+  -webkit-transform:translateX(-100%);
+  -moz-transform:translateX(-100%);
+  -o-transform:translateX(-100%);
+  transform:translateX(-100%);
 }
 
 /***************************DETAILS PAGE********************************/

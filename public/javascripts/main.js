@@ -1,4 +1,4 @@
-var bandApp = angular.module('bandApp', ['ui.router','ngSanitize']);
+var bandApp = angular.module('bandApp', ['ui.router','ngSanitize','ngAnimate']);
 
 bandApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$urlRouterProvider){
 	$stateProvider.state('bands',{
@@ -16,12 +16,22 @@ bandApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$u
   		templateUrl: 'pages/details.ejs',
   		controller: 'detailsCtrl'
 	});
-	/*$stateProvider.state('albums', {
-  		url: '/albums/{album1ID}',
-  		templateUrl: 'pages/albums.ejs',
-  		controller: 'album1Ctrl'
-	});*/
 	$urlRouterProvider.otherwise('/bands');
+}]);
+
+bandApp.run(['$rootScope',function($rootScope){
+  $rootScope.bands = [
+    { _id:'56c646d4c1d11185dace1c8f', title: "/images/artists/metallica.jpg", Name: "Metallica" },
+    { _id:'56c64872c1d11185dace1c90', title: "/images/artists/slayer.jpg", Name: "Slayer" },
+    { _id:'56c64a5fc1d11185dace1c91', title: "/images/artists/judas.jpg", Name: "Judas Priest" },
+    { _id:'56c64c2fc1d11185dace1c92', title: "/images/artists/lamb.jpg", Name: "Lamb of God" },
+    { _id:'56c64e14c1d11185dace1c93', title: "/images/artists/led.jpg", Name: "Led Zeppelin" },
+    { _id:'56c64f8dc1d11185dace1c94', title: "/images/artists/iron.jpg", Name: "Iron Maiden" },
+    { _id:'56c65168c1d11185dace1c95', title: "/images/artists/avenged.jpg", Name: "Avenged Sevenfold" },
+    { _id:'56c653ffc1d11185dace1c96', title: "/images/artists/disturbed.jpg", Name: "Disturbed" },
+    { _id:'56c65682c1d11185dace1c97', title: "/images/artists/slipknot.jpg", Name: "Slipknot" },
+    { _id:'56c657f9c1d11185dace1c98', title: "/images/artists/megadeth.jpg", Name: "Megadeth" }
+  ];
 }]);
 
 bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
@@ -36,22 +46,10 @@ bandApp.controller('albumCtrl',['$scope','$http',function($scope,$http){
 	});
 }]);
 
-
-bandApp.controller('songCtrl',['$scope','$http',function($scope,$http){
-	$http.get('/songs').then(function(songs){
-		$scope.songs = songs.data;
-	});
-}]);
-
-/*bandApp.controller('album1Ctrl', ['$scope','$http','$stateParams',function($scope,$http,$stateParams){
-	var ID = $stateParams.album1ID;
-	$http.get('/album1/'+ID).then(function(albums){
-		$scope.SongName = albums.data.Title;
-	});
-}]);*/
-
-bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams', function($scope,$http,$stateParams) {
+bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams','$rootScope', function($scope,$http,$stateParams,$rootScope) {
   var ID = $stateParams.bandId;
+  var index = parseInt($stateParams._id, 10);
+  var record = $rootScope.bands[index - 1];
   $http.get('/details/'+ID).then(function(bands) {
   	$scope.bandName = bands.data.Name;
   	$scope.bandPic = bands.data.Photo;
