@@ -1,39 +1,42 @@
 <div id="bioContainer">
 <div>
+<img data-ng-src="{{bandPic}}">
 <h3 class="NAME" data-ng-bind-html="bandName"></h3>
 <p class="GENRE" data-ng-bind-html="bandGenre"></p>
-<img data-ng-src="{{bandPic}}">
 </div>
 <p class="BIO" data-ng-bind-html="bandBio"></p>
-<a href="#/">Back</a>
+<a href="#/">Check Out Other Artists!</a>
 </div><!--bio Container-->
 
-<div id="bioAlbumCon">
+<button id="daBUTTON" ng-click="isHidden=!isHidden">View Albums</button>
+<div id="bioAlbumCon" ng-init="isHidden=true">
+    <div class="animation" ng-hide="isHidden">
 	<ul>
         <li>
-        <a href="#/albumDetails/{{album1ID}}">
         <img data-ng-src="{{album1}}">
-    	</a>
+    	<p class="albumName" data-ng-bind-html="album1Name"></p>
+    	<p class="albumYear" data-ng-bind-html="album1Year"></p>
         </li>
         <li>
-        <a href="#/albumDetails/{{album2ID}}">
         <img data-ng-src="{{album2}}">
-    	</a>
+    	<p class="albumName" data-ng-bind-html="album2Name"></p>
+    	<p class="albumYear" data-ng-bind-html="album2Year"></p>
         </li>
         <li>
-        <a href="#/albumDetails/{{album3ID}}">
         <img data-ng-src="{{album3}}">
-    	</a>
+    	<p class="albumName" data-ng-bind-html="album3Name"></p>
+    	<p class="albumYear" data-ng-bind-html="album3Year"></p>
         </li>
         <li>
-        <a href="#/albumDetails/{{album4ID}}">
         <img data-ng-src="{{album4}}">
-    	</a>
+    	<p class="albumName" data-ng-bind-html="album4Name"></p>
+    	<p class="albumYear" data-ng-bind-html="album4Year"></p>
         </li>
         <li>
-        <a href="#/albumDetails/{{album5ID}}">
         <img data-ng-src="{{album5}}">
-    	</a>
+    	<p class="albumName" data-ng-bind-html="album5Name"></p>
+    	<p class="albumYear" data-ng-bind-html="album5Year"></p>
         </li>
     </ul>
+    </div>
 </div>

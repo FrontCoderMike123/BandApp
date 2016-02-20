@@ -1,12 +1,11 @@
 body {
   background-color: #ccc;
   position: relative;
-  min-height: 100vh;
   overflow-x: hidden;
   text-align: center;
 }
 
-h1,h2,h3,h4,h5,h6,span,a
+h1,h2,h3,h4,h5,h6,span,a,button
 {
   font-family: 'Anton', sans-serif;
 }
@@ -40,8 +39,20 @@ img
 header h1
 {
   font-size: 2em;
-  margin: 20px 0 0 0;
+  margin: 20px 0 5px 0;
   display: block;
+}
+
+header a
+{
+  display: block;
+  margin: auto;
+  width: -moz-max-content;
+}
+
+header a:hover
+{
+  color: black;
 }
 
 #container h1, #container h3
@@ -79,31 +90,6 @@ header h1
 {
   padding: 10px 0;
   font-size: 1.2em;
-}
-
-#albumContainer
-{
-  clear: both;
-  overflow: hidden;
-}
-
-#albumContainer button
-{
- border: none;
-  background-color: rgba(255,255,255,.5);
-  display: block;
-  margin: 5px 0 5px 5px;
-  padding: 5px 10px;
-  letter-spacing: 1px;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-  border: 1px solid rgba(55,55,55,.5);
-  cursor: pointer;
-}
-
-#albumContainer button:hover
-{
-  box-shadow: inset 0 0 5px rgba(0,0,0,.5);
-  text-shadow: none;
 }
 
 .artistNames
@@ -209,7 +195,6 @@ ul.img-list li {
 span.text-content {
   background: rgba(53,53,53,.8);
   line-height: 22px;
-  padding: 20.6% 0;
   color: #fff;
   letter-spacing: 1px;
   font-weight: bold;
@@ -217,6 +202,8 @@ span.text-content {
   left: 0;
   position: absolute;
   top: 0;
+  height: 100vh;
+  padding-top: 20%;
   width: 100%;
   opacity: 0;
   -moz-opacity:0;
@@ -235,10 +222,10 @@ ul.img-list li:hover span.text-content {
 
 .animation.ng-hide-add,
 .animation.ng-hide-remove {
-  -webkit-transition:5s linear all;
-  -moz-transition:5s linear all;
-  -o-transition:5s linear all;
-  transition:5s linear all;
+  -webkit-transition:all 5s ease;
+  -moz-transition:all 5s ease;;
+  -o-transition:all 5s ease;;
+  transition:all 5s ease;;
   display:block!important;
 }
 .animation.ng-hide-remove {
@@ -286,6 +273,7 @@ ul.img-list li:hover span.text-content {
 #bioContainer img
 {
   width: 600px;
+  border-top-left-radius: 5px;
 }
 
 #bioContainer div
@@ -294,6 +282,30 @@ ul.img-list li:hover span.text-content {
   position: relative;
   overflow: hidden;
   width: 600px;
+}
+
+#bioContainer a
+{
+  color: #999;
+  clear: both;
+  display: block;
+  float: left;
+  width: 600px;
+  background-color: rgba(0,0,0,.3);
+  margin: 0;
+  padding: 6px 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#bioContainer a:hover
+{
+  background: rgba(0,0,0,.5);
+  color: #ebebeb;
 }
 
 .BIO
@@ -306,12 +318,19 @@ ul.img-list li:hover span.text-content {
   line-height: 34px;
   background: rgba(0,0,0,.5);
   padding: 5px 10px;
-  border: thin solid #ebebeb;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #bioAlbumCon
 {
   overflow: hidden;
+  background: rgba(0,0,0,.3);
+  width: 98%;
+  margin: auto;
+  margin-bottom: 1%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 #bioAlbumCon ul
@@ -322,7 +341,972 @@ ul.img-list li:hover span.text-content {
 #bioAlbumCon li
 {
   display: inline-block;
-  margin: 0 5px 10px 5px;;
+  position: relative;
+  margin: 0 10px;
 }
 
+#daBUTTON
+{
+ border: none;
+  color: #999;
+  width:98%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin: auto;
+  background-color: rgba(0,0,0,.3);
+  display: block;
+  padding: 6px 0;
+  letter-spacing: 1px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+#daBUTTON:hover
+{
+  background: rgba(0,0,0,.5);
+  color: #ebebeb;
+}
+
+.albumName,.albumYear
+{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 5px 0;
+  background: rgba(0,0,0,.5);
+}
+
+.albumName
+{
+  top: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.albumYear
+{
+  bottom: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+#bioAlbumCon img
+{
+  border-radius: 5px;
+}
+
+/*My Phone*/
+@media only screen and (max-width: 240px) {
+  header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  #bandWrapper li
+  {
+    width: 100%;
+  }
+  
+  ul.img-list span
+  {
+    padding: 17% 0;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Android*/
+@media only screen and (min-width:241px) and  (max-width: 266px) {
+  header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  #bandWrapper li
+  {
+    width: 100%;
+  }
+  
+  ul.img-list span
+  {
+    padding: 18% 0;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*iPhone4*/
+@media only screen and (min-width: 267px) and (max-width: 320px) {
+  header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  #bandWrapper li
+  {
+    width: 100%;
+  }
+  
+  ul.img-list span
+  {
+    padding: 20% 0;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Blackberry*/
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  #bandWrapper li
+  {
+    width: 100%;
+  }
+  
+  ul.img-list span
+  {
+    padding: 20% 0;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.3em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Galaxy S*/
+@media only screen and (min-width: 415px) and (max-width: 480px) {
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  #bandWrapper li
+  {
+    width: 50%;
+  }
+  
+  ul.img-list span
+  {
+    padding: 17% 0;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.6em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1.1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Kindle*/
+@media only screen and (min-width: 481px) and (max-width: 533px) {
+  header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  #bandWrapper li
+  {
+    width: 50%;
+  }
+  
+  ul.img-list span
+  {
+    padding: 18% 0;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.6em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1.2em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Nook Tablet*/
+@media only screen and (min-width: 534px) and (max-width: 600px) {
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  #bandWrapper li
+  {
+    width: 50%;
+  }
+  
+  ul.img-list span
+  {
+    padding: 19% 0;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.6em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1.1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Apple Ipad*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
+  }
+  
+  header a
+  {
+    font-size: .8em;
+    margin-bottom: 5px;
+  }
+  
+  ul.img-list span
+  {
+    padding: 11% 0;
+    font-size: .8em;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  #bioContainer img
+  {
+    border-radius: 0;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.6em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1.1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Desktop1*/
+@media only screen and (min-width: 801px) and (max-width: 980px) {
+   ul.img-list span
+  {
+    padding: 15% 0;
+    font-size: .9em;
+  }
+  
+  #bioContainer
+  {
+    padding: 0;
+  }
+  
+  #bioContainer div
+  {
+    float: none;
+    width: 100%;
+  }
+  
+  #bioContainer img
+  {
+    border-radius: 0;
+  }
+  
+  .NAME, .GENRE
+  {
+    position: unset;
+    position: static;
+  }
+  
+  .GENRE
+  {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  #bioContainer h3
+  {
+    margin: 0 0 5px 0;
+    font-size: 1.6em;
+  }
+  
+  .BIO
+  {
+    margin: 0;
+    float: none;
+    width: 96%;
+    border-radius: 0;
+    padding: 2%;
+    font-size: 1.1em;
+    line-height: normal;
+    text-align: center;
+  }
+  
+  #bioContainer a
+  {
+    width: 100%;
+    border-radius: 0;
+    float: none;
+  }
+  
+  #daBUTTON
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  #bioAlbumCon
+  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 0 5px 0;
+    width:19%;
+  }
+  
+  #bioAlbumCon li:last-child
+  {
+    margin: 0;
+  }
+}
+
+/*Desktop2*/
+@media only screen and (min-width: 981px) and (max-width: 1280px) {
+  #bioContainer div
+  {
+    float: left;
+    width: 50%;
+  }
+  
+  #bioContainer a
+  {
+    width: 50%;
+  }
+
+   .BIO
+  {
+    width: 48%;
+    margin: 0;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 5px;
+  }
+}
+
+/*Desktop 3*/
+@media only screen and (min-width: 1367px) {
+   ul.img-list span
+  {
+    font-size: 1.3em;
+    line-height: 35px;
+    padding: 16% 0;
+  }
+  
+   #bioContainer div
+  {
+    float: left;
+    width: 50%;
+  }
+  
+  #bioContainer a
+  {
+    width: 50%;
+  }
+
+   .BIO
+  {
+    width: 48%;
+    margin: 0;
+  }
+  
+  #bioAlbumCon li
+  {
+    margin: 0 5px;
+  }
+}
 
