@@ -1,10 +1,12 @@
+<div id="wrapperWrapper">
 <div id="bandWrapper">
 <ul class="img-list">
   <li data-ng-repeat="band in bands">
     <a class="detailsLink" ng-href="#/details/{{band._id}}" ng-animate-ref="{{band._id}}">
-      <img data-ng-src="{{band.Photo}}"><!--look at JS-->
+      <img data-ng-src="{{band.title}}"><!--look at JS-->
       <span class="text-content"><span>{{band.Name}}<br>Biography</span></span>
     </a>
   </li>
 </ul>
+</div>
 </div>

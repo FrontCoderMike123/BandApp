@@ -3,7 +3,9 @@ body {
   position: relative;
   overflow-x: hidden;
   text-align: center;
-  margin: 0;
+  background-size: cover;
+  background-position: top left;
+  background-repeat: no-repeat;
 }
 
 h1,h2,h3,h4,h5,h6,span,a,button
@@ -28,31 +30,50 @@ img
 
 #container
 {
-  background-color: rgba(0,0,0,.6);
   width: 95%;
   margin: 1.5% auto;
   border-radius: 5px;
-  border: thin solid #444;
   color: white;
 }
 
-header h1
+header
 {
-  font-size: 2em;
-  margin: 20px 0 5px 0;
-  display: block;
+  padding: 10px;
+  text-align: left;
 }
 
 header a
 {
-  display: block;
-  margin: auto;
+  color: #aa1111;
   width: -moz-max-content;
 }
 
 header a:hover
 {
-  color: black;
+  color: white;
+}
+
+footer
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 98%;
+  background-color: rgba(0,0,0,.5);
+  padding: 1%;
+}
+
+.backgrounds h3
+{
+  color: #aa1111;
+  margin-bottom: 1%;
+  font-size: 1.2em;
+}
+
+.backgrounds li
+{
+  width: 10%;
+  float: left;
 }
 
 #container h1, #container h3
@@ -62,10 +83,19 @@ header a:hover
   display: block;
 }
 
+#wrapperWrapper
+{
+  position: relative;
+}
+
 #bandWrapper
 {
+  border-radius: 5px;
   overflow: hidden;
-  clear: both;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 #bandWrapper li
@@ -222,6 +252,10 @@ ul.img-list li:hover span.text-content {
 
 .animation.ng-hide-remove {
   opacity:0;
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
 }
 .animation.ng-hide-remove.ng-hide-remove-active {
   opacity:1;
@@ -239,6 +273,7 @@ ul.img-list li:hover span.text-content {
   z-index: 100;
   width:100%;
   background:#333;
+  border-radius: 5px;
 }
 .view.ng-enter, .view.ng-leave,
 .detailsLink.ng-anchor {
@@ -248,6 +283,10 @@ ul.img-list li:hover span.text-content {
   transition:0.5s linear all;
 }
 .view.ng-enter {
+  -webkit-opacity:1;
+  -moz-opacity:1;
+  -o-opacity:1;
+  opacity:1;
   -webkit-transform:translateX(100%);
   -moz-transform:translateX(100%);
   -o-transform:translateX(100%);
@@ -260,10 +299,14 @@ ul.img-list li:hover span.text-content {
   transform:translateX(0%);
 }
 .view.ng-leave.ng-leave-active {
-  -webkit-transform:translateX(-100%);
-  -moz-transform:translateX(-100%);
-  -o-transform:translateX(-100%);
-  transform:translateX(-100%);
+  -webkit-opacity:0;
+  -moz-opacity:0;
+  -o-opacity:0;
+  opacity:0;
+  -webkit-transform:translateY(100%);
+  -moz-transform:translateY(100%);
+  -o-transform:translateY(100%);
+  transform:translateY(100%);
 }
 
 /***************************DETAILS PAGE********************************/
@@ -353,6 +396,25 @@ ul.img-list li:hover span.text-content {
   border-bottom-right-radius: 5px;
 }
 
+.SONGS
+{
+
+}
+
+.SONGS li
+{
+  display: block!important;
+  padding: 7px 0;
+  border-bottom: thin solid #999;
+  color: #ebebeb;
+}
+
+.SONGS li:nth-child(odd)
+{
+  border-color: #ebebeb;
+  color: #999;
+}
+
 #bioAlbumCon
 {
   overflow: hidden;
@@ -419,7 +481,7 @@ ul.img-list li:hover span.text-content {
 
 .albumYear
 {
-  bottom: 0;
+  bottom:44%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -527,6 +589,7 @@ ul.img-list li:hover span.text-content {
 
 /*Android*/
 @media only screen and (min-width:241px) and  (max-width: 266px) {
+  
   header h1
   {
     margin: 5px 0;

@@ -35,9 +35,37 @@ bandApp.run(['$rootScope',function($rootScope){
 }]);
 
 bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
-	$http.get('/bands').then(function(bands){
-		$scope.bands = bands.data;
-	});
+    links = document.querySelectorAll(".backgrounds a");
+    var body = document.querySelector("body");
+
+    window.onload = function() {
+  if (localStorage) {
+    document.querySelectorAll(".backgrounds a").addEventListener('click', function() {
+      var back = document.querySelector("body");
+      localStorage.setItem('body', back);
+    });
+  }else{
+    console.log('No LocalStorage for you!');
+  }
+}
+
+    function setBG() {
+    var target = this.id+'.jpg';
+    localStorage.setItem('BG',target);
+    displayStoredItems(target);
+}
+
+    function displayStoredItems(target) {
+    if(localStorage.getItem('BG') !== null){
+        var getBG = localStorage.getItem('BG');
+        body.style.backgroundImage = "url('/images/backgrounds/"+target+"')";
+    }
+}
+
+for(var i = 0; i<links.length; i++) {
+    links[i].addEventListener('click',setBG,false);
+}
+
 }]);
 
 bandApp.controller('albumCtrl',['$scope','$http',function($scope,$http){
@@ -75,6 +103,36 @@ bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams','$rootScope',
     $scope.album3Year = bands.data.Albums[2].Year;
     $scope.album4Year = bands.data.Albums[3].Year;
     $scope.album5Year = bands.data.Albums[4].Year;
+    //album 1
+    $scope.album1Song1 = bands.data.Albums[0].Songs[0].Title;
+    $scope.album1Song2 = bands.data.Albums[0].Songs[1].Title;
+    $scope.album1Song3 = bands.data.Albums[0].Songs[2].Title;
+    $scope.album1Song4 = bands.data.Albums[0].Songs[3].Title;
+    $scope.album1Song5 = bands.data.Albums[0].Songs[4].Title;
+    //album 2
+    $scope.album2Song1 = bands.data.Albums[1].Songs[0].Title;
+    $scope.album2Song2 = bands.data.Albums[1].Songs[1].Title;
+    $scope.album2Song3 = bands.data.Albums[1].Songs[2].Title;
+    $scope.album2Song4 = bands.data.Albums[1].Songs[3].Title;
+    $scope.album2Song5 = bands.data.Albums[1].Songs[4].Title;
+    //album 3
+    $scope.album3Song1 = bands.data.Albums[2].Songs[0].Title;
+    $scope.album3Song2 = bands.data.Albums[2].Songs[1].Title;
+    $scope.album3Song3 = bands.data.Albums[2].Songs[2].Title;
+    $scope.album3Song4 = bands.data.Albums[2].Songs[3].Title;
+    $scope.album3Song5 = bands.data.Albums[2].Songs[4].Title;
+    //album 4
+    $scope.album4Song1 = bands.data.Albums[3].Songs[0].Title;
+    $scope.album4Song2 = bands.data.Albums[3].Songs[1].Title;
+    $scope.album4Song3 = bands.data.Albums[3].Songs[2].Title;
+    $scope.album4Song4 = bands.data.Albums[3].Songs[3].Title;
+    $scope.album4Song5 = bands.data.Albums[3].Songs[4].Title;
+    //album 5
+    $scope.album5Song1 = bands.data.Albums[4].Songs[0].Title;
+    $scope.album5Song2 = bands.data.Albums[4].Songs[1].Title;
+    $scope.album5Song3 = bands.data.Albums[4].Songs[2].Title;
+    $scope.album5Song4 = bands.data.Albums[4].Songs[3].Title;
+    $scope.album5Song5 = bands.data.Albums[4].Songs[4].Title;
     //OOPS
   });
 }]);
