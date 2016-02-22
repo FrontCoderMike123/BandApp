@@ -8,6 +8,7 @@ var Album = require('../models/Album.js');
 
 router.get('/',function(req,res){
   res.render('index', {
+        title: 'Bands & Albums',
         coder: 'MB Development'
       });
 });

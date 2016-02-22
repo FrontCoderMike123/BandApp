@@ -8,6 +8,18 @@ body {
   background-repeat: no-repeat;
 }
 
+/* when hiding the thing */
+.ng-hide-add         { 
+  -webkit-animation:0.5s lightSpeedOut ease; 
+  animation:0.5s lightSpeedOut ease; 
+}
+
+/* when showing the thing */
+.ng-hide-remove      { 
+  -webkit-animation:0.5s flipInX ease; 
+  animation:0.5s flipInX ease; 
+}
+
 h1,h2,h3,h4,h5,h6,span,a,button
 {
   font-family: 'Anton', sans-serif;
@@ -40,11 +52,12 @@ header
 {
   padding: 10px;
   text-align: left;
+  background-color: rgba(0,0,0,.5);
 }
 
 header a
 {
-  color: #aa1111;
+  color: #fff;
   width: -moz-max-content;
 }
 
@@ -56,18 +69,44 @@ header a:hover
 footer
 {
   position: fixed;
-  bottom: 0;
+  bottom: -73px;
   left: 0;
-  width: 98%;
+  width: 100%;
   background-color: rgba(0,0,0,.5);
-  padding: 1%;
 }
 
-.backgrounds h3
+footer:hover
 {
-  color: #aa1111;
-  margin-bottom: 1%;
-  font-size: 1.2em;
+  bottom: 0;
+}
+
+footer a
+{
+  color: #ccc;
+}
+
+footer h3
+{
+  color: #fff;
+  padding: 5px 0 5px 5px;
+  font-size: 1em;
+  text-align: left;
+}
+
+.slide
+{
+  -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.slide:hover
+{
+   -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
 }
 
 .backgrounds li
@@ -95,7 +134,9 @@ footer
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 98%;
+  background-color: rgba(0,0,0,.5);
+  padding: 1%;
 }
 
 #bandWrapper li
@@ -103,6 +144,7 @@ footer
   width: 20%;
   float: left;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .titles
@@ -407,6 +449,7 @@ ul.img-list li:hover span.text-content {
   padding: 7px 0;
   border-bottom: thin solid #999;
   color: #ebebeb;
+  font-size: .7em;
 }
 
 .SONGS li:nth-child(odd)
@@ -481,7 +524,7 @@ ul.img-list li:hover span.text-content {
 
 .albumYear
 {
-  bottom:44%;
+  bottom:40%;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }

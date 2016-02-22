@@ -36,10 +36,16 @@ bandApp.run(['$rootScope',function($rootScope){
 
 bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
     links = document.querySelectorAll(".backgrounds a");
+    artists = document.querySelectorAll("#bandWrapper a");
     var body = document.querySelector("body");
 
     window.onload = function() {
   if (localStorage) {
+    document.querySelectorAll('#bandWrapper a').addEventListener('click',function(){
+      var back = document.querySelector("body");
+      localStorage.setItem('body', back);
+    });
+
     document.querySelectorAll(".backgrounds a").addEventListener('click', function() {
       var back = document.querySelector("body");
       localStorage.setItem('body', back);
@@ -64,6 +70,10 @@ bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
 
 for(var i = 0; i<links.length; i++) {
     links[i].addEventListener('click',setBG,false);
+}
+
+for(var i = 0; i<artists.length; i++) {
+    artists[i].addEventListener('click',setBG,false);
 }
 
 }]);
