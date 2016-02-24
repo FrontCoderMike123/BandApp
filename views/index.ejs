@@ -4,7 +4,7 @@
     <% include ../views/partials/head %>
 </head>
 <body data-ng-app="bandApp">
-    <header>
+    <header id="header{{x}}" ng-repeat="x in [1]">
       <a href="http://michel-beaubien.com/" target="onblank"><%= coder %></a>
     </header>
 

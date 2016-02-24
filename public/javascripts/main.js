@@ -19,6 +19,10 @@ bandApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$u
 	$urlRouterProvider.otherwise('/bands');
 }]);
 
+bandApp.run(['$anchorScroll', function($anchorScroll){
+  $anchorScroll.yOffset = 50;
+}]);
+
 bandApp.run(['$rootScope',function($rootScope){
   $rootScope.bands = [
     { _id:'56c646d4c1d11185dace1c8f', title: "/images/artists/metallica.jpg", Name: "Metallica" },
@@ -34,9 +38,19 @@ bandApp.run(['$rootScope',function($rootScope){
   ];
 }]);
 
-bandApp.controller('mainCtrl',['$scope','$http',function($scope,$http){
+bandApp.controller('mainCtrl',['$scope','$http','$anchorScroll','$location',function($scope,$http,$anchorScroll,$location){
+    $scope.goToTop = function(x) {
+      var newHash = 'header' + x;
+      if ($location.hash() !== newHash) {
+        $location.hash('header' + x);
+      } else {
+        $anchorScroll();
+      }
+    };
+
     links = document.querySelectorAll(".backgrounds a");
     artists = document.querySelectorAll("#bandWrapper a");
+    images = document.querySelectorAll('#bandWrapper li');
     var body = document.querySelector("body");
 
     window.onload = function() {

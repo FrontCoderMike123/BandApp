@@ -6,6 +6,7 @@ body {
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 /* when hiding the thing */
@@ -42,9 +43,7 @@ img
 
 #container
 {
-  width: 95%;
-  margin: 1.5% auto;
-  border-radius: 5px;
+  width: 100%;
   color: white;
 }
 
@@ -69,10 +68,11 @@ header a:hover
 footer
 {
   position: fixed;
-  bottom: -73px;
+  bottom: -85px;
   left: 0;
   width: 100%;
   background-color: rgba(0,0,0,.5);
+  cursor: pointer;
 }
 
 footer:hover
@@ -88,31 +88,51 @@ footer a
 footer h3
 {
   color: #fff;
-  padding: 5px 0 5px 5px;
+  padding: 5px 0 15px 5px;
   font-size: 1em;
   text-align: left;
 }
 
 .slide
 {
-  -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
 .slide:hover
 {
-   -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
+   -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .backgrounds li
 {
   width: 10%;
   float: left;
+}
+
+.backgrounds img
+{
+  -webkit-opacity: .6;
+  -moz-opacity: .6;
+  -o-opacity: .6;
+  opacity: .6;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.backgrounds img:hover
+{
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  -o-opacity: 1;
+  opacity: 1;
 }
 
 #container h1, #container h3
@@ -129,7 +149,6 @@ footer h3
 
 #bandWrapper
 {
-  border-radius: 5px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -315,7 +334,6 @@ ul.img-list li:hover span.text-content {
   z-index: 100;
   width:100%;
   background:#333;
-  border-radius: 5px;
 }
 .view.ng-enter, .view.ng-leave,
 .detailsLink.ng-anchor {
@@ -368,12 +386,13 @@ ul.img-list li:hover span.text-content {
 .NAME
 {
   position: absolute;
-  width: 100%;
+  width: 50%;
   bottom: 10px;
-  left: 0;
+  left: 25%;
   z-index: 1;
   background-color: rgba(0,0,0,.7);
   padding: 6px 0;
+  border-radius: 5px;
 }
 
 .GENRE
@@ -536,6 +555,30 @@ ul.img-list li:hover span.text-content {
 
 /*My Phone*/
 @media only screen and (max-width: 240px) {
+  .albumYear
+  {
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
   header h1
   {
     margin: 5px 0;
@@ -545,7 +588,8 @@ ul.img-list li:hover span.text-content {
   header a
   {
     font-size: .8em;
-    margin-bottom: 5px;
+    display: block;
+    margin: auto;
   }
   
   #bandWrapper li
@@ -632,17 +676,41 @@ ul.img-list li:hover span.text-content {
 
 /*Android*/
 @media only screen and (min-width:241px) and  (max-width: 266px) {
-  
-  header h1
+  .albumYear
   {
-    margin: 5px 0;
-    font-size: 1.5em;
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
   }
   
   header a
   {
     font-size: .8em;
-    margin-bottom: 5px;
+    display: block;
+    margin: auto;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
+  header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
   }
   
   #bandWrapper li
@@ -729,16 +797,41 @@ ul.img-list li:hover span.text-content {
 
 /*iPhone4*/
 @media only screen and (min-width: 267px) and (max-width: 320px) {
-  header h1
+  .albumYear
   {
-    margin: 5px 0;
-    font-size: 1.5em;
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
   }
   
   header a
   {
-    font-size: .8em;
-    margin-bottom: 5px;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
+  header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
   }
   
   #bandWrapper li
@@ -825,16 +918,41 @@ ul.img-list li:hover span.text-content {
 
 /*Blackberry*/
 @media only screen and (min-width: 321px) and (max-width: 360px) {
-   header h1
+  .albumYear
   {
-    margin: 5px 0;
-    font-size: 1.5em;
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
   }
   
   header a
   {
-    font-size: .8em;
-    margin-bottom: 5px;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
   }
   
   #bandWrapper li
@@ -921,16 +1039,41 @@ ul.img-list li:hover span.text-content {
 
 /*Galaxy S*/
 @media only screen and (min-width: 415px) and (max-width: 480px) {
-   header h1
+  .albumYear
   {
-    margin: 5px 0;
-    font-size: 1.5em;
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
   }
   
   header a
   {
-    font-size: .8em;
-    margin-bottom: 5px;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
   }
   
   #bandWrapper li
@@ -1017,16 +1160,41 @@ ul.img-list li:hover span.text-content {
 
 /*Kindle*/
 @media only screen and (min-width: 481px) and (max-width: 533px) {
-  header h1
+  .albumYear
   {
-    margin: 5px 0;
-    font-size: 1.5em;
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
   }
   
   header a
   {
-    font-size: .8em;
-    margin-bottom: 5px;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
+  header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
   }
   
   #bandWrapper li
@@ -1113,16 +1281,41 @@ ul.img-list li:hover span.text-content {
 
 /*Nook Tablet*/
 @media only screen and (min-width: 534px) and (max-width: 600px) {
-   header h1
+  .albumYear
   {
-    margin: 5px 0;
-    font-size: 1.5em;
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
   }
   
   header a
   {
-    font-size: .8em;
-    margin-bottom: 5px;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
   }
   
   #bandWrapper li
@@ -1209,16 +1402,41 @@ ul.img-list li:hover span.text-content {
 
 /*Apple Ipad*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
-   header h1
+  .albumYear
   {
-    margin: 5px 0;
-    font-size: 1.5em;
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  body
+  {
+    background-image: none!important;
   }
   
   header a
   {
-    font-size: .8em;
-    margin-bottom: 5px;
+    font-size: 1em;
+    display: block;
+    margin: auto;
+  }
+  
+  footer
+  {
+    display: none;
+    height: 0;
+  }
+  
+   header h1
+  {
+    margin: 5px 0;
+    font-size: 1.5em;
   }
   
   ul.img-list span
@@ -1306,6 +1524,24 @@ ul.img-list li:hover span.text-content {
 
 /*Desktop1*/
 @media only screen and (min-width: 801px) and (max-width: 980px) {
+  .albumYear
+  {
+    position: unset;
+    position: static;
+    border-radius: 0;
+  }
+  
+  .NAME
+  {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  footer
+  {
+    bottom: -60px;
+  }
+  
    ul.img-list span
   {
     padding: 15% 0;
@@ -1380,13 +1616,14 @@ ul.img-list li:hover span.text-content {
   
   #bioAlbumCon li
   {
-    margin: 0 0 5px 0;
-    width:19%;
+    width: 19.5%;
+    margin: 0;
   }
   
-  #bioAlbumCon li:last-child
+  .SONGS li
   {
-    margin: 0;
+    width: 100%!important;
+    margin: 0!important;
   }
 }
 
@@ -1417,6 +1654,24 @@ ul.img-list li:hover span.text-content {
 
 /*Desktop 3*/
 @media only screen and (min-width: 1367px) {
+  #bioAlbumCon li
+  {
+    width: 13%;
+    margin: 0;
+  }
+  
+  .SONGS li
+  {
+    width: 100%!important;
+    margin: 0!important;
+  }
+  
+  footer
+  {
+   display: none;
+    height: 0;
+  }
+  
    ul.img-list span
   {
     font-size: 1.3em;
