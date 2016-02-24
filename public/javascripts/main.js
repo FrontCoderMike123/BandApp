@@ -19,10 +19,6 @@ bandApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$u
 	$urlRouterProvider.otherwise('/bands');
 }]);
 
-bandApp.run(['$anchorScroll', function($anchorScroll){
-  $anchorScroll.yOffset = 50;
-}]);
-
 bandApp.run(['$rootScope',function($rootScope){
   $rootScope.bands = [
     { _id:'56c646d4c1d11185dace1c8f', title: "/images/artists/metallica.jpg", Name: "Metallica" },
@@ -38,14 +34,10 @@ bandApp.run(['$rootScope',function($rootScope){
   ];
 }]);
 
-bandApp.controller('mainCtrl',['$scope','$http','$anchorScroll','$location',function($scope,$http,$anchorScroll,$location){
-    $scope.goToTop = function(x) {
-      var newHash = 'header' + x;
-      if ($location.hash() !== newHash) {
-        $location.hash('header' + x);
-      } else {
-        $anchorScroll();
-      }
+bandApp.controller('mainCtrl',['$scope','$anchorScroll','$location',function($scope,$anchorScroll,$location){
+    $scope.goToTop = function(){
+      $location.hash('header');
+      anchorScroll();
     };
 
     links = document.querySelectorAll(".backgrounds a");

@@ -7,8 +7,7 @@ id="{{band.Name}}"
 class="detailsLink"
 ng-href="#/details/{{band._id}}"
 ng-animate-ref="{{band._id}}"
-data-ng-click="goToTop(x)"
-data-ng-repeat="x in [1]">
+data-ng-click="goToTop()">
       <img data-ng-src="{{band.title}}"><!--look at JS-->
       <span class="text-content"><span>{{band.Name}}<br>Biography</span></span>
 </a>
