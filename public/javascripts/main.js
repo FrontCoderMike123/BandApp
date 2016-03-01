@@ -6,11 +6,6 @@ bandApp.config(['$stateProvider','$urlRouterProvider',function($stateProvider,$u
 		templateUrl: 'pages/bands.ejs',
 		controller: 'mainCtrl'
 	});
-	$stateProvider.state('albums',{
-		url: '/bands',
-		templateUrl: 'pages/bands.ejs',
-		controller: 'albumCtrl'
-	});
 	$stateProvider.state('details', {
   		url: '/details/{bandId}',
   		templateUrl: 'pages/details.ejs',
@@ -37,7 +32,7 @@ bandApp.run(['$rootScope',function($rootScope){
 bandApp.controller('mainCtrl',['$scope','$anchorScroll','$location',function($scope,$anchorScroll,$location){
     $scope.goToTop = function(){
       $location.hash('header');
-      anchorScroll();
+      $anchorScroll();
     };
 
     links = document.querySelectorAll(".backgrounds a");
@@ -47,12 +42,12 @@ bandApp.controller('mainCtrl',['$scope','$anchorScroll','$location',function($sc
 
     window.onload = function() {
   if (localStorage) {
-    document.querySelectorAll('#bandWrapper a').addEventListener('click',function(){
+    artists.addEventListener('click',function(){
       var back = document.querySelector("body");
       localStorage.setItem('body', back);
     });
 
-    document.querySelectorAll(".backgrounds a").addEventListener('click', function() {
+    artists.addEventListener('click', function() {
       var back = document.querySelector("body");
       localStorage.setItem('body', back);
     });
@@ -84,12 +79,6 @@ for(var i = 0; i<artists.length; i++) {
 
 }]);
 
-bandApp.controller('albumCtrl',['$scope','$http',function($scope,$http){
-	$http.get('/albums').then(function(albums){
-		$scope.albums = albums.data;
-	});
-}]);
-
 bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams','$rootScope', function($scope,$http,$stateParams,$rootScope) {
   var ID = $stateParams.bandId;
   var index = parseInt($stateParams._id, 10);
@@ -99,56 +88,17 @@ bandApp.controller('detailsCtrl', ['$scope','$http','$stateParams','$rootScope',
   	$scope.bandPic = bands.data.Photo;
   	$scope.bandBio = bands.data.Bio;
   	$scope.bandGenre = bands.data.Genre;
-  	$scope.album1 = bands.data.Albums[0].Photo;
-    $scope.album2 = bands.data.Albums[1].Photo;
-    $scope.album3 = bands.data.Albums[2].Photo;
-    $scope.album4 = bands.data.Albums[3].Photo;
-    $scope.album5 = bands.data.Albums[4].Photo;
-    $scope.album1ID = bands.data.Albums[0].ID;
-    $scope.album2ID = bands.data.Albums[1].ID;
-    $scope.album3ID = bands.data.Albums[2].ID;
-    $scope.album4ID = bands.data.Albums[3].ID;
-    $scope.album5ID = bands.data.Albums[4].ID;
-    $scope.album1Name = bands.data.Albums[0].Name;
-    $scope.album2Name = bands.data.Albums[1].Name;
-    $scope.album3Name = bands.data.Albums[2].Name;
-    $scope.album4Name = bands.data.Albums[3].Name;
-    $scope.album5Name = bands.data.Albums[4].Name;
-    $scope.album1Year = bands.data.Albums[0].Year;
-    $scope.album2Year = bands.data.Albums[1].Year;
-    $scope.album3Year = bands.data.Albums[2].Year;
-    $scope.album4Year = bands.data.Albums[3].Year;
-    $scope.album5Year = bands.data.Albums[4].Year;
-    //album 1
-    $scope.album1Song1 = bands.data.Albums[0].Songs[0].Title;
-    $scope.album1Song2 = bands.data.Albums[0].Songs[1].Title;
-    $scope.album1Song3 = bands.data.Albums[0].Songs[2].Title;
-    $scope.album1Song4 = bands.data.Albums[0].Songs[3].Title;
-    $scope.album1Song5 = bands.data.Albums[0].Songs[4].Title;
-    //album 2
-    $scope.album2Song1 = bands.data.Albums[1].Songs[0].Title;
-    $scope.album2Song2 = bands.data.Albums[1].Songs[1].Title;
-    $scope.album2Song3 = bands.data.Albums[1].Songs[2].Title;
-    $scope.album2Song4 = bands.data.Albums[1].Songs[3].Title;
-    $scope.album2Song5 = bands.data.Albums[1].Songs[4].Title;
-    //album 3
-    $scope.album3Song1 = bands.data.Albums[2].Songs[0].Title;
-    $scope.album3Song2 = bands.data.Albums[2].Songs[1].Title;
-    $scope.album3Song3 = bands.data.Albums[2].Songs[2].Title;
-    $scope.album3Song4 = bands.data.Albums[2].Songs[3].Title;
-    $scope.album3Song5 = bands.data.Albums[2].Songs[4].Title;
-    //album 4
-    $scope.album4Song1 = bands.data.Albums[3].Songs[0].Title;
-    $scope.album4Song2 = bands.data.Albums[3].Songs[1].Title;
-    $scope.album4Song3 = bands.data.Albums[3].Songs[2].Title;
-    $scope.album4Song4 = bands.data.Albums[3].Songs[3].Title;
-    $scope.album4Song5 = bands.data.Albums[3].Songs[4].Title;
-    //album 5
-    $scope.album5Song1 = bands.data.Albums[4].Songs[0].Title;
-    $scope.album5Song2 = bands.data.Albums[4].Songs[1].Title;
-    $scope.album5Song3 = bands.data.Albums[4].Songs[2].Title;
-    $scope.album5Song4 = bands.data.Albums[4].Songs[3].Title;
-    $scope.album5Song5 = bands.data.Albums[4].Songs[4].Title;
-    //OOPS
+    $scope.albums = bands.data.Albums;
+    $scope.firstSongs = bands.data.Albums[0].Songs;
+    $scope.secondSongs = bands.data.Albums[1].Songs;
+    $scope.thirdSongs = bands.data.Albums[2].Songs;
+    $scope.forthSongs = bands.data.Albums[3].Songs;
+    $scope.fifthSongs = bands.data.Albums[4].Songs;
+    /*$scope.songs = bands.data.Albums.Songs;
+    console.log($scope.songs);*/
+    //Un comment above to see that there was no other way... for me to reach the mongo DB... see for yourself please
+    //THIS IS MUUUUCH CLEANER THAN BEFORE.... BUT AS YOU CAN SEE. IM STILL HAVING ISSUES GETTING THE 
+    //SONGS BECAUSE OF THE WAY THEY'RE "treed" TOGETHER....
+    //MUCH BETTER THOUGH LOL
   });
 }]);

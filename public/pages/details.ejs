@@ -1,77 +1,96 @@
 <div id="bioContainer" ng-animate-ref="{{profile._id}}">
+	<h2 class="hidden">Artists Biography</h2>
 <div>
+	<h2 class="hidden">Artists Photo</h2>
 <img data-ng-src="{{bandPic}}">
-<h3 class="NAME" data-ng-bind-html="bandName"></h3>
+<p class="NAME" data-ng-bind-html="bandName"></p>
 <p class="GENRE" data-ng-bind-html="bandGenre"></p>
 </div>
 <p class="BIO" data-ng-bind-html="bandBio"></p>
 <a href="#/">Check Out Other Artists!</a>
 </div><!--bio Container-->
 
-<button id="daBUTTON" ng-click="isHidden=!isHidden">View Albums</button>
-<div id="bioAlbumCon" ng-init="isHidden=true">
+<button class="daBUTTON" ng-click="isHidden=!isHidden">View Albums</button>
+<div id="bioAlbumCon"  ng-init="isHidden=true">
+	<h2 class="hidden">Artists Albums</h2>
     <div class="animation" ng-hide="isHidden">
-	<ul>
-        <li>
-        <img data-ng-src="{{album1}}">
-    	<p class="albumName" data-ng-bind-html="album1Name"></p>
-    	<p class="albumYear" data-ng-bind-html="album1Year"></p>
-        <ul class="SONGS">
-            <li data-ng-bind-html="album1Song1"></li>
-            <li data-ng-bind-html="album1Song2"></li>
-            <li data-ng-bind-html="album1Song3"></li>
-            <li data-ng-bind-html="album1Song4"></li>
-            <li data-ng-bind-html="album1Song5"></li>
-        </ul>
-        </li>
-        <li>
-        <img data-ng-src="{{album2}}">
-    	<p class="albumName" data-ng-bind-html="album2Name"></p>
-    	<p class="albumYear" data-ng-bind-html="album2Year"></p>
-        <ul class="SONGS">
-            <li data-ng-bind-html="album2Song1"></li>
-            <li data-ng-bind-html="album2Song2"></li>
-            <li data-ng-bind-html="album2Song3"></li>
-            <li data-ng-bind-html="album2Song4"></li>
-            <li data-ng-bind-html="album2Song5"></li>
-        </ul>
-        </li>
-        <li>
-        <img data-ng-src="{{album3}}">
-    	<p class="albumName" data-ng-bind-html="album3Name"></p>
-    	<p class="albumYear" data-ng-bind-html="album3Year"></p>
-        <ul class="SONGS">
-            <li data-ng-bind-html="album3Song1"></li>
-            <li data-ng-bind-html="album3Song2"></li>
-            <li data-ng-bind-html="album3Song3"></li>
-            <li data-ng-bind-html="album3Song4"></li>
-            <li data-ng-bind-html="album3Song5"></li>
-        </ul>
-        </li>
-        <li>
-        <img data-ng-src="{{album4}}">
-    	<p class="albumName" data-ng-bind-html="album4Name"></p>
-    	<p class="albumYear" data-ng-bind-html="album4Year"></p>
-        <ul class="SONGS">
-            <li data-ng-bind-html="album4Song1"></li>
-            <li data-ng-bind-html="album4Song2"></li>
-            <li data-ng-bind-html="album4Song3"></li>
-            <li data-ng-bind-html="album4Song4"></li>
-            <li data-ng-bind-html="album4Song5"></li>
-        </ul>
-        </li>
-        <li>
-        <img data-ng-src="{{album5}}">
-    	<p class="albumName" data-ng-bind-html="album5Name"></p>
-    	<p class="albumYear" data-ng-bind-html="album5Year"></p>
-        <ul class="SONGS">
-            <li data-ng-bind-html="album5Song1"></li>
-            <li data-ng-bind-html="album5Song2"></li>
-            <li data-ng-bind-html="album5Song3"></li>
-            <li data-ng-bind-html="album5Song4"></li>
-            <li data-ng-bind-html="album5Song5"></li>
-        </ul>
-        </li>
-    </ul>
+    		<div class="ALBUMS" data-ng-repeat="album in albums">
+    			<h2 class="hidden">Album Images</h2>
+    			<div id="coverHolder">
+    				<img data-ng-src="{{album.Photo}}">
+    				<p class="albumName">{{album.Name}}<br>{{album.Year}}</p>
+    			</div>
+    		</div><!--albums-->
+
+    		<button class="daBUTTON songBut" ng-click="hiddenTracks=!hiddenTracks">View Songs</button>
+    		<div ng-init="hiddenTracks=true">
+    			<h2 class="hidden">Artists Songs</h2>
+    			<div ng-hide="hiddenTracks">
+    				<ul class="SONGS">
+    					<p class="albumNameMobile" data-ng-bind="albums[0].Name"></p>
+    				<li data-ng-repeat="firstSong in firstSongs">
+    				<p>
+    					<span>Title</span>
+    					{{firstSong.Title}}
+    					<br>
+    					<span>Length</span>
+    					{{firstSong.Length}}
+    				</p>
+    				</li>
+    			</ul>
+    				
+    			<ul class="SONGS">
+    				<p class="albumNameMobile" data-ng-bind="albums[1].Name"></p>
+    				<li data-ng-repeat="secondSong in secondSongs">
+    				<p>
+    					<span>Title</span>
+    					{{secondSong.Title}}
+    					<br>
+    					<span>Length</span>
+    					{{secondSong.Length}}
+    				</p>
+    				</li>
+    			</ul>
+    				
+    			<ul class="SONGS">
+    				<p class="albumNameMobile" data-ng-bind="albums[2].Name"></p>
+    				<li data-ng-repeat="thirdSong in thirdSongs">
+    				<p>
+    					<span>Title</span>
+    					{{thirdSong.Title}}
+    					<br>
+    					<span>Length</span>
+    					{{thirdSong.Length}}
+    				</p>
+    				</li>
+    			</ul>
+    				
+    			<ul class="SONGS">
+    				<p class="albumNameMobile" data-ng-bind="albums[3].Name"></p>
+    				<li data-ng-repeat="forthSong in forthSongs">
+    				<p>
+    					<span>Title</span>
+    					{{forthSong.Title}}
+    					<br>
+    					<span>Length</span>
+    					{{forthSong.Length}}
+    				</p>
+    				</li>
+    			</ul>
+    				
+    			<ul class="SONGS">
+    				<p class="albumNameMobile" data-ng-bind="albums[4].Name"></p>
+    				<li data-ng-repeat="fifthSong in fifthSongs">
+    				<p>
+    					<span>Title</span>
+    					{{fifthSong.Title}}
+    					<br>
+    					<span>Length</span>
+    					{{fifthSong.Length}}
+    				</p>
+    				</li>
+    			</ul>
+    			</div>
+    		</div><!--SONGS CON-->
     </div>
 </div>

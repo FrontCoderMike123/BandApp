@@ -9,6 +9,17 @@ body {
   min-height: 100vh;
 }
 
+.hidden
+{
+  display: none;
+}
+
+.albumNameMobile
+{
+  display: none!important;
+  /*album name when desktop... will apear on mobile to seperate the massive song lists!!!!*/
+}
+
 /* when hiding the thing */
 .ng-hide-add         { 
   -webkit-animation:0.5s lightSpeedOut ease; 
@@ -62,7 +73,7 @@ header a
 
 header a:hover
 {
-  color: white;
+  color: black;
 }
 
 footer
@@ -75,14 +86,14 @@ footer
   cursor: pointer;
 }
 
-footer:hover
-{
-  bottom: 0;
-}
-
 footer a
 {
   color: #ccc;
+}
+
+footer:hover
+{
+  bottom: 0!important;
 }
 
 footer h3
@@ -383,16 +394,59 @@ ul.img-list li:hover span.text-content {
   display: block;
 }
 
+#coverHolder
+{
+  position: relative;
+}
+
+.ALBUMS
+{
+  width: 20%;
+  float: left;
+}
+
+.SONGS
+{
+  width: 20%;
+  float: left;
+}
+
+.SONGS span
+{
+  display: block;
+  margin-bottom: 5px;
+  background-color: rgba(255,255,255,.5);
+  padding: 1% 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.SONGS span:last-child
+{
+  margin-top: 5px;
+}
+
+.SONGS li
+{
+  display: block!important;
+  padding: 7px 0;
+  border-bottom: thin solid #999;
+  color: #ebebeb;
+  font-size: .8em;
+}
+
 .NAME
 {
+  font-family: 'Anton', sans-serif;
   position: absolute;
   width: 50%;
-  bottom: 10px;
+  bottom: 30px;
   left: 25%;
   z-index: 1;
   background-color: rgba(0,0,0,.7);
   padding: 6px 0;
   border-radius: 5px;
+  font-size: 1.5em;
 }
 
 .GENRE
@@ -457,26 +511,6 @@ ul.img-list li:hover span.text-content {
   border-bottom-right-radius: 5px;
 }
 
-.SONGS
-{
-
-}
-
-.SONGS li
-{
-  display: block!important;
-  padding: 7px 0;
-  border-bottom: thin solid #999;
-  color: #ebebeb;
-  font-size: .7em;
-}
-
-.SONGS li:nth-child(odd)
-{
-  border-color: #ebebeb;
-  color: #999;
-}
-
 #bioAlbumCon
 {
   overflow: hidden;
@@ -500,7 +534,7 @@ ul.img-list li:hover span.text-content {
   margin: 0 10px;
 }
 
-#daBUTTON
+.daBUTTON
 {
  border: none;
   color: #999;
@@ -519,26 +553,26 @@ ul.img-list li:hover span.text-content {
   transition: all .5s ease;
 }
 
-#daBUTTON:hover
+.daBUTTON:hover
 {
   background: rgba(0,0,0,.5);
   color: #ebebeb;
 }
 
-.albumName,.albumYear
+.songBut
 {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  padding: 5px 0;
-  background: rgba(0,0,0,.5);
+  border-radius: 5px;
+  background: none;
 }
 
 .albumName
 {
+  position: absolute;
+  width: 100%;;
+  left: 0;
+  padding: 5px 0;
+  background: rgba(0,0,0,.5);
   top: 0;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
 }
 
 .albumYear
@@ -555,6 +589,13 @@ ul.img-list li:hover span.text-content {
 
 /*My Phone*/
 @media only screen and (max-width: 240px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -672,10 +713,39 @@ ul.img-list li:hover span.text-content {
   {
     margin: 0;
   }
+  
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 /*Android*/
 @media only screen and (min-width:241px) and  (max-width: 266px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+  
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -797,6 +867,24 @@ ul.img-list li:hover span.text-content {
 
 /*iPhone4*/
 @media only screen and (min-width: 267px) and (max-width: 320px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+  
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -918,6 +1006,29 @@ ul.img-list li:hover span.text-content {
 
 /*Blackberry*/
 @media only screen and (min-width: 321px) and (max-width: 360px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+  
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .SONGS p
+  {
+    font-size: 1.2em;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -1039,6 +1150,35 @@ ul.img-list li:hover span.text-content {
 
 /*Galaxy S*/
 @media only screen and (min-width: 415px) and (max-width: 480px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+  
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .SONGS span
+  {
+    width: 70%;
+    margin: 5px auto;
+  }
+  
+  .SONGS p
+  {
+    font-size: 1.3em;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -1160,6 +1300,35 @@ ul.img-list li:hover span.text-content {
 
 /*Kindle*/
 @media only screen and (min-width: 481px) and (max-width: 533px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .SONGS span
+  {
+    width: 70%;
+    margin: 5px auto;
+  }
+  
+  .SONGS p
+  {
+    font-size: 1.3em;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -1281,6 +1450,35 @@ ul.img-list li:hover span.text-content {
 
 /*Nook Tablet*/
 @media only screen and (min-width: 534px) and (max-width: 600px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+  
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .SONGS span
+  {
+    width: 30%;
+    margin: 5px auto;
+  }
+  
+  .SONGS p
+  {
+    font-size: 1.3em;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -1402,6 +1600,35 @@ ul.img-list li:hover span.text-content {
 
 /*Apple Ipad*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+  .albumNameMobile
+  {
+    display: block!important;
+    font-size: 1.5em!important;
+    margin: 5px 0 0 0!important;
+  }
+  
+  .ALBUMS
+  {
+    width: 100%;
+  }
+  
+  .SONGS
+  {
+    width: 100%;
+    margin: 0;
+  }
+  
+  .SONGS span
+  {
+    width: 30%;
+    margin: 5px auto;
+  }
+  
+  .SONGS p
+  {
+    font-size: 1.3em;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -1524,6 +1751,17 @@ ul.img-list li:hover span.text-content {
 
 /*Desktop1*/
 @media only screen and (min-width: 801px) and (max-width: 980px) {
+  .albumName
+  {
+    width: 100%;
+    left: 0;
+  }
+  
+  .SONGS p
+  {
+    font-size: .8em;
+  }
+  
   .albumYear
   {
     position: unset;
@@ -1654,16 +1892,21 @@ ul.img-list li:hover span.text-content {
 
 /*Desktop 3*/
 @media only screen and (min-width: 1367px) {
-  #bioAlbumCon li
+  .SONGS
   {
-    width: 13%;
-    margin: 0;
+   width: 20%;  
   }
   
   .SONGS li
   {
-    width: 100%!important;
-    margin: 0!important;
+    width: 70%!important;
+    margin: auto!important;
+  }
+  
+  #bioAlbumCon li
+  {
+    width: 13%;
+    margin: 0;
   }
   
   footer

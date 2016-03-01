@@ -1,13 +1,9 @@
 <div id="wrapperWrapper">
 <div id="bandWrapper">
+	<h2 class="hidden">10 Artists</h2>
 <ul class="img-list">
   <li data-ng-repeat="band in bands">
-<a
-id="{{band.Name}}"
-class="detailsLink"
-ng-href="#/details/{{band._id}}"
-ng-animate-ref="{{band._id}}"
-data-ng-click="goToTop()">
+<a id="{{band.Name}}" class="detailsLink" ng-href="#/details/{{band._id}}" ng-animate-ref="{{band._id}}" data-ng-click="goToTop()">
       <img data-ng-src="{{band.title}}"><!--look at JS-->
       <span class="text-content"><span>{{band.Name}}<br>Biography</span></span>
 </a>
@@ -15,4 +11,3 @@ data-ng-click="goToTop()">
 </ul>
 </div>
 </div>
-<!--ng-href="#/details/{{band._id}}"-->
